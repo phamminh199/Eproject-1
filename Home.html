@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+
+			text-align: center;
+		}
+
+		#p1 {
+			background-image: none;
+			background-repeat: no-repeat;
+			background-color: sandybrown;
+			height: 60px;
+			padding: 15px;
+
+			font-size: 1.3rem;
+		}
+
+		span {
+			color: black;
+		}
+
+		.root {
+			float: right;
+
+		}
+
+		ul.root>li {
+			list-style: none;
+			float: left;
+		}
+
+		ul.root>li>a {
+			padding: 35px;
+			position: relative;
+
+		}
+
+		ul.submenu {
+			width: 250px;
+			min-height: 89px;
+			display: none;
+			position: absolute;
+		}
+
+		ul.submenu li {
+			list-style: none;
+		}
+
+		ul.submenu li a {
+			text-transform: none;
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			border: 1px solid #ccc;
+			line-height: 40px;
+			text-indent: 10px;
+
+		}
+
+		ul.root>li:hover ul.submenu {
+			display: block;
+
+			background-color: sandybrown;
+			color: cornsilk;
+			transform: ease-in 0.35s;
+
+		}
+
+		ul.submenu li a:hover {
+			background-color: yellow;
+			color: darkblue;
+			transform: ease-in 0.35s;
+		}
+
+		.root>li>a::after {
+			content: "";
+			height: 2.7px;
+			width: 0;
+			background: red;
+			position: absolute;
+			bottom: 20px;
+			left: 1.9rem;
+			transition: all 0.5s ease-in-out;
+		}
+
+		.root>li>a:hover::after {
+			width: 50%;
+			text-decoration: none;
+
+
+		}
+
+		#p2 {
+			width: 100%;
+			height: 600px;
+		}
+
+		#p3 {
+			height: 600px;
+
+		}
+
+		#p4 {
+			height: 800px;
+
+		}
+
+		#p5 {
+			border: black solid thick;
+			padding: 1rem;
+			background-image: url("Untitled\ design\ \(5\)\ \(1\).png");
+			border-radius: 1rem;
+
+
+		}
+
+		#p7 {
+			border: tomato solid thick;
+			padding: 1rem;
+			background-color: #ff914d;
+
+		}
+
+		#p8 {
+			
+			background-color: black;
+			height: 85px;
+			padding: 0.2rem;
+
+
+		}
+
+		.input2 {
+			width: 30%;
+			height: 50px;
+			margin-top: 0.5rem;
+			border: tomato double thin;
+			border-radius: 0.2rem;
+		}
+
+
+
+		div.gallery {
+			border: 2px solid;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			text-align: center;
+		}
+
+		div.gallery:hover {
+			border: 3px solid #ff914d;
+			box-shadow: 2px 4px 5px indianred;
+		}
+
+		div.gallery img {
+			width: 200px;
+			height: 180px;
+		}
+
+		div.desc {
+			padding: 30px;
+			text-align: center;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.responsive {
+			padding: 18px;
+			float: left;
+			width: 24.99999%;
+
+
+		}
+
+		.input1 {
+			margin: 1.3rem;
+			width: 20%;
+			height: 2rem;
+			border-radius: 0.5rem;
+			background-color: rgb(238, 232, 221);
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.button {
+			background-color: tomato;
+			height: 2.6rem;
+			width: 15%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.word {
+			font-size: 1.3rem;
+		}
+
+		#img {
+
+			position: absolute;
+			top: 20px;
+			left: 60px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div id="p1">
+		<div class="menu">
+			<ul class="root">
+				<li><a href=""><span>Home</span> </a></li>
+				<li><a href=""> <span>Menu</span> </a>
+					<ul class="submenu">
+						<li><a href="">Fruit juices</a></li>
+						<li><a href=""> Vegetable Juices</a></li>
+						<li><a href="">Smoothies</a></li>
+						<li><a href=""> Protein Shakes</a></li>
+						<li><a href="">Winter Menu</a></li>
+						<li><a href="">Chocolate Juices</a></li>
+						<li><a href="">Mock Tails</a></li>
+					</ul>
+
+				</li>
+				<li><a href=""> <span>Tips</span> </a></li>
+				<li><a href=""> <span>Catering</span> </a></li>
+				<li><a href=""> <span>Frachsing</span></a></li>
+				<li> <a href=""><span> About us</span></a></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div id="img">
+		<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
+	</div>
+	<div id="p8">
+
+		<input class="input2" type="text" id="text" name="" placeholder="Reseach....">
+	</div>
+	<table>
+
+		<tr>
+			<td><img id="p2" src="Green Workshop Winter Poster (2).png"></td>
+			<td><img id="p3" src="Terracotta Minimalist Business Finance Presentation (6) (1).png"></td>
+		</tr>
+
+	</table>
+
+
+
+	<div>
+		<h1>Menu Sản Phẩm Bán Chạy</h1>
+	</div>
+	<hr>
+	<p>Shrek-Juice.com is a website of the Shrek Juice Centre which is big Juice Centre famous for variety of juices it
+		provides. They also provide catering service for various events like Wedding, Shows and so on. With include of
+		new type of juices and also thought of changing the lookalike of the website the owner wish to renovate the look
+		and feel of the website which should be more catchy and helpful for the business perspective.</p>
+
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="apple.png">
+				<img src="apple (1).png" alt="Cinque Terre" width="600" height="200">
+			</a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="carrot (1).png">
+				<img src="carrot (1).png" alt="Forest" width="900" height="400">
+			</a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="pineapple (1).png">
+				<img src="pineapple (4).png" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="combo (1).png">
+				<img src="combo.png" alt="Mountains" width="600" height="400">
+			</a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+	<img id="p4" src="Terracotta Minimalist Business Finance Presentation (7) (2).png">
+
+	<div id="p5">
+		<h2>
+			Đăng ký để nhận thông tin về phiếu giảm giá 
+		</h2>
+		<input class="input1" type="text" name="ten" id="name" placeholder=" Name...">
+		<input class="input1" type="text" name="Email" id="mail" placeholder="Email...">
+		<input class="input1" type="text" name="phone" id="numberphone" placeholder="Numberphone...">
+		<input class="input1" type="text" name="country" id="country" placeholder="Country">
+		<input class="button" type="button" value="Đăng ký"  > 
+	</div>
+	<div id="p7">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3><img src="Red Grey Automotive Car Silhouette Logo (5) (1).png"></h3>
+					<p class="word">Shrek-Juice.com is a website of the Shrek Juice Centre which is big Juice
+						Centre famous for variety
+						of juices it provides. They also provide catering service for various events like Wedding, Shows
+						and
+						so
+						on.</p>
+
+				</div>
+				<div class="col-sm-4">
+					<h3>Thông tin liên hệ</h3>
+					<p>Địa chỉ</p>
+					<p>Điên thoại</p>
+					<p>Email</p>
+					<p>Icon</p>
+				</div>
+				<div class="col-sm-2">
+					<h3>Bản đồ</h3>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script>
+	document.getElementById("")
+</script>
+
+</html>
