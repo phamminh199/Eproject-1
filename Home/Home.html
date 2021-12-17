@@ -6,221 +6,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	
-	<title>Document</title>
-	<style>
-		* {
-			margin: 0px;
-			padding: 0px;
-		}
-
-		body {
-			font-family: Arial, Helvetica, sans-serif;
-
-			text-align: center;
-		}
-
-		#p1 {
-			background-image: none;
-			background-repeat: no-repeat;
-			background-color: sandybrown;
-			height: 60px;
-			padding: 15px;
-
-			font-size: 1.3rem;
-		}
-
-		span {
-			color: black;
-		}
-
-		.root {
-			float: right;
-
-		}
-
-		ul.root>li {
-			list-style: none;
-			float: left;
-		}
-
-		ul.root>li>a {
-			padding: 35px;
-			position: relative;
-
-		}
-
-		ul.submenu {
-			width: 250px;
-			min-height: 89px;
-			display: none;
-			position: absolute;
-		}
-
-		ul.submenu li {
-			list-style: none;
-		}
-
-		ul.submenu li a {
-			text-transform: none;
-			text-decoration: none;
-			color: #fff;
-			display: block;
-			border: 1px solid #ccc;
-			line-height: 40px;
-			text-indent: 10px;
-
-		}
-
-		ul.root>li:hover ul.submenu {
-			display: block;
-
-			background-color: sandybrown;
-			color: cornsilk;
-			transform: ease-in 0.35s;
-
-		}
-
-		ul.submenu li a:hover {
-			background-color: yellow;
-			color: darkblue;
-			transform: ease-in 0.35s;
-		}
-
-		.root>li>a::after {
-			content: "";
-			height: 2.7px;
-			width: 0;
-			background: red;
-			position: absolute;
-			bottom: 20px;
-			left: 1.9rem;
-			transition: all 0.5s ease-in-out;
-		}
-
-		.root>li>a:hover::after {
-			width: 50%;
-			text-decoration: none;
-
-
-		}
-
-		#p2 {
-			width: 100%;
-			height: 600px;
-		}
-
-		#p3 {
-			height: 600px;
-
-		}
-
-		#p4 {
-			height: 800px;
-
-		}
-
-		#p5 {
-			border: black solid thick;
-			padding: 1rem;
-			background-image: url("Untitled\ design\ \(5\)\ \(1\).png");
-			border-radius: 1rem;
-
-
-		}
-
-		#p7 {
-			border: tomato solid thick;
-			padding: 1rem;
-			background-color: #ff914d;
-
-		}
-
-		#p8 {
-			
-			background-color: black;
-			height: 85px;
-			padding: 0.2rem;
-
-
-		}
-
-		.input2 {
-			width: 30%;
-			height: 50px;
-			margin-top: 0.5rem;
-			border: tomato double thin;
-			border-radius: 0.2rem;
-		}
-
-
-
-		div.gallery {
-			border: 2px solid;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			text-align: center;
-		}
-
-		div.gallery:hover {
-			border: 3px solid #ff914d;
-			box-shadow: 2px 4px 5px indianred;
-		}
-
-		div.gallery img {
-			width: 200px;
-			height: 180px;
-		}
-
-		div.desc {
-			padding: 30px;
-			text-align: center;
-		}
-
-		* {
-			box-sizing: border-box;
-			margin: 0px;
-			padding: 0px;
-		}
-
-		.responsive {
-			padding: 18px;
-			float: left;
-			width: 24.99999%;
-
-
-		}
-
-		.input1 {
-			margin: 1.3rem;
-			width: 20%;
-			height: 2rem;
-			border-radius: 0.5rem;
-			background-color: rgb(238, 232, 221);
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		}
-
-		.button {
-			background-color: tomato;
-			height: 2.6rem;
-			width: 15%;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		}
-
-		.word {
-			font-size: 1.3rem;
-		}
-
-		#img {
-
-			position: absolute;
-			top: 20px;
-			left: 60px;
-		}
-	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css.css">
+	<title>Home</title>
 </head>
 
 <body>
-	
+
 	<div id="p1">
 		<div class="menu">
 			<ul class="root">
@@ -237,10 +31,10 @@
 					</ul>
 
 				</li>
-				<li><a href=""> <span>Tips</span> </a></li>
+				<li><a href=""> <span>Guide</span> </a></li>
 				<li><a href=""> <span>Catering</span> </a></li>
-				<li><a href=""> <span>Frachsing</span></a></li>
-				<li><a href=""> <span>Feedback</span></a></li>
+				<li><a href=""> <span>Franchising</span></a></li>
+				<li><a href="Contractus.html"> <span>Contract us</span></a></li>
 				<li> <a href=""><span> About us</span></a></li>
 
 			</ul>
@@ -252,20 +46,47 @@
 	</div>
 	<div id="p8">
 
-		<input class="input2" type="text" id="text" name="" placeholder="Reseach....">
+		<input class="input2" type="text" id="text" name="" placeholder="Search....">
 	</div>
-	<table>
-
-		<tr>
-			<td><img id="p2" src="Green Workshop Winter Poster (2).png"></td>
-			<td><img id="p3" src="Terracotta Minimalist Business Finance Presentation (6) (1).png"></td>
-		</tr>
-
-	</table>
 
 
+	<div id="demo" class="carousel slide" data-ride="carousel">
 
-	<div>
+
+		<ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+			<li data-target="#demo" data-slide-to="2"></li>
+			<li data-target="#demo" data-slide-to="3"></li>
+			<li data-target="#demo" data-slide-to="4"></li>
+		</ul>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="slide-1.png" width="1100" height="500">
+			</div>
+			<div class="carousel-item">
+				<img src="slide-2.png" width="1100" height="500">
+			</div>
+			<div class="carousel-item">
+				<img src="slide-1 (2).png" width="1100" height="500">
+			</div>
+			<div class="carousel-item">
+				<img src="slide-1 (5).png">
+			</div>
+			<div class="carousel-item">
+				<img src="slide-1 (8).png">
+			</div>
+		</div>
+
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+	<div style="padding-top: 25px;">
 		<h1>Menu Sản Phẩm Bán Chạy</h1>
 	</div>
 	<hr>
@@ -311,18 +132,189 @@
 			<div class="desc">Add a description of the image here</div>
 		</div>
 	</div>
-	<img id="p4" src="Terracotta Minimalist Business Finance Presentation (7) (2).png">
+	<div id="p4">
+		<table>
+			<tr>
+				<td><img src="duahau.jfif"></td>
 
-	<div id="p5">
-		<h2>
-			Đăng ký để nhận thông tin về phiếu giảm giá 
-		</h2>
-		<input class="input1" type="text" name="ten" id="name" placeholder=" Name...">
-		<input class="input1" type="text" name="Email" id="mail" placeholder="Email...">
-		<input class="input1" type="text" name="phone" id="numberphone" placeholder="Numberphone...">
-		<input class="input1" type="text" name="country" id="country" placeholder="Country">
-		<input class="button" type="button" value="Đăng ký"  > 
+				<td>
+					<p style="font-size: 3rem;">Nước ép dưa hấu bạc hà </p>
+					<hr>
+					Nước dưa hấu bạc hà giải khát và mát lạnh với một chút chanh là thức uống hoàn hảo để thưởng thức trong
+					ngày hè nóng bức.Để làm nước ép dưa hấu, trước tiên tôi cắt chúng thành từng khối và để trong tủ lạnh ướp lạnh trong
+					1-2 giờ trước khi pha.
+				</td>
+			</tr>
+
+		</table>
 	</div>
+	<div id="wrapper">
+        <div class="headline">
+            <h3>Menu</h3>
+        </div>
+        <ul class="product">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p1-1.jpeg" alt="">
+
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p1-2.jpeg" alt="">
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info" >
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p2-2.jpeg" alt="">
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p3-2.jpeg" alt="">
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p7-1.jpeg" alt="">
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p6-1.jpeg" alt="">
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p3-1.jpeg" alt="">
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="p3-2.jpeg" alt="">
+                        </a>
+                        <a href="" class="buy">Mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bags
+                        </a>
+                        <a href="" class="product-name">Daily</a>
+                        <a href="" class="product-price">99999</a>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+		<div class="headline">
+			<a href="">
+            <h4>Xem tat ca san pham</h4></a>
+        </div>
+    </div>
+	<div id="p5">
+		<fieldset>
+			<legend>Feedback</legend>
+			Hinh
+			<div>
+				<a href="">DE LAI THONG TIN FEEDBACK</a>
+			</div>
+		</fieldset>
+	</div>
+
+	
 	<div id="p7">
 		<div class="container">
 			<div class="row">
@@ -334,7 +326,7 @@
 						and
 						so
 						on.</p>
-
+	
 				</div>
 				<div class="col-sm-4">
 					<h3>Thông tin liên hệ</h3>
@@ -350,10 +342,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 </body>
-<script>
-	document.getElementById("")
-</script>
 
 </html>
