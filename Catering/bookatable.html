@@ -1,0 +1,101 @@
+<style>
+    div form{
+        background-color:rgb(43, 29, 29);
+    }
+    div form h2{
+        text-align: center;
+    }
+    .input1 {
+		border: 2px rgb(39, 2, 2) solid;
+		width: 500px;
+		height: 2.8rem;
+		filter: opacity(40%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+	}
+form div{
+    padding: 0.5rem;
+}
+	.input1:hover {
+		background-color: rgb(192, 238, 222);
+		border: bisque thick solid;
+	}
+
+	.submit {
+		background-color: tomato;
+		height: 2.6rem;
+		width: 15%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+	}
+
+	.submit:hover {
+		filter: opacity(80%);
+	}
+    form label{
+        color: whitesmoke;
+    }
+h3{
+    text-align: center;
+font-size: 70px;
+color: whitesmoke;
+border-bottom:lightblue double thick;
+}
+form div span{
+    color: red;
+}
+</style>
+<div  >
+
+    <form  action="" name="form" ng-submit="book()" ng-controller="bookatable" >
+        <h3>Book A Table</h3>
+        <div >
+            <label for="">Firstname</label><br>
+            <input class="input1" type="text" name="fristname" ng-model="fname" required>
+            <span ng-show="form.fristname.$error.required" style="color: red;"> <br>
+                Firstnameis required</span>
+        </div>
+        <div >
+            <label for="">Lastname</label><br>
+            <input class="input1" type="text" name="Lastname" ng-model="lname" required>
+            <span ng-show="form.Lastname.$error.required" style="color: red;"><br>
+                Lastname is required</span>
+        </div>
+        <div >
+            <label for="">Email</label><br>
+            <input class="input1 " type="text" name="Email" ng-model="mail" required>
+            <span ng-show="form.Email.$error.required" style="color: red;"><br>
+                Email is required</span>
+        </div>
+        <div>
+            <label for="">Date</label><br>
+            <input class="input1" type="date" name="date" ng-module="date1" required>
+            <span ng-show="form.date.$error.required" style="color: red;">Date is required</span>
+        </div>
+        <div>
+            <label for="">Time</label><br>
+            <input class="input1" type="time" name="Time" ng-module="time1" required>
+            <span ng-show="form.Time.$error.required" style="color: red;">Time is required</span>
+        </div>
+        <div>
+            <label for="">Party size</label><br>
+            <select class="input1" name="Party" ng-module="Partysize" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+            <span ng-show="form.Party.$error.required" style="color: red;">Party is required</span>
+        </div>
+        <div class="container">
+            <input type="submit" value="Book Now" ng-model="Book"  ng-disabled="(form.Lastname.$pristine && form.Lastname.$invalid) ||
+           ( form.Lastname.$pristine && form.Lastname.$invalid)||(form.Email.$pristine && form.Email.$invalid)||(form.date.$pristine && form.date.$invalid)||(form.Time.$pristine && form.Time.$invalid)||
+           (form.Party.$pristine && form.Party.$invalid)"  class="btn btn-outline-danger" >
+        </div>
+    </form>
+
+</div>

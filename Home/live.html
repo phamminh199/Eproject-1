@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,270 +7,140 @@
     <title>Document</title>
 </head>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
+    *{
+        margin:  0px auto;
+        padding: 0px 0px ;
     }
+    #p1 {
 
-    #wrapper{
-        margin: 0 auto;
-        max-width: 1170px;
-    }
-    .headline {
-        text-align: center;
-        margin: 40px 0px;
-    }
+background-color: sandybrown;
+height: 60px;
+padding: 15px;
+text-decoration: none;
+font-size: 1.3rem;
 
-    h3 {
-        font-size: 18px;
-        color: red;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        border: solid black 1px;
-        display: inline-block;
-    }
 
-    ul.product {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        list-style: none;
-    }
+}
 
-    ul.product li {
-        flex-basis: 25%;
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-        margin-bottom: 30px;
-    }
+span {
+color: black;
+}
 
-    ul.product li img {
-        max-width: 100%;
-        height: auto;
-    }
+.root {
+float:right;
+background-color: sandybrown;
+text-align:right
+}
 
-    ul.product li  .product-top {
-        overflow: hidden;
-        position: relative;
+ul.root>li {
+list-style: none;
+float:left
 
-    }
 
-    ul.product li:hover  .product-top .product-thumb img {
-        filter: opacity(80%);
-    }
+}
 
-    ul.product li  .product-top .product-thumb {
-        display: block;
+ul.root>li>a {
+padding: 35px;
+position: relative;
 
-    }
+}
 
-    ul.product li  .product-top .product-thumb img {
-        display: block;
+ul.submenu {
+width: 250px;
+min-height: 89px;
+display: none;
+position: absolute;
 
-    }
+}
 
-    ul.product li:hover a.buy {
-       bottom: 0px;
-       transition: 1s ease-in-out;
-    }
+ul.submenu li {
+list-style: none;
+position: relative;
+}
 
-    ul.product li  .product-top a.buy {
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        display: block;
-        background-color: blueviolet;
-        color: red;
-        padding: 10px 0px;
-        position: absolute;
-        width: 100%;
-        transition: 0.8s ease-in-out;
-        opacity: 0.85;
-    }
 
-    ul.product li .product.info {
-        padding: 20px 0px;
-    }
+ul.submenu li a {
+text-transform: none;
+text-decoration: none;
+color: #fff;
+display: block;
+border: 1px solid #ccc;
+line-height: 40px;
+text-indent: 10px;
 
-    ul.product li .product-info a {
-        display: block;
-        text-decoration: none;
-    }
 
-    ul.product li .product.info a.product-cat {
-        font-size: 11px;
-        text-transform: uppercase;
-        padding: 3px 0px;
 
-    }
 
-    ul.product li .product.info a.product-name {
-        padding: 3px 0px;
+}
 
-    }
+ul.root>li:hover ul.submenu {
+display: block;
+background-color: sandybrown;
+color: cornsilk;
+transform: ease-in 0.35s;
 
-    ul.product li .product.info .product-price {
-        padding: 2px 0px;
-        font-weight: 600px;
 
-    }
+}
+
+ul.submenu li a:hover {
+background-color: yellow;
+color: darkblue;
+transform: ease-in 0.35s;
+
+}
+
+.root>li>a::after {
+content: "";
+height: 2.7px;
+width: 0;
+background: red;
+position: absolute;
+bottom: 20px;
+left: 1.9rem;
+transition: all 0.5s ease-in-out;
+
+}
+
+.root>li>a:hover::after {
+width: 50%;
+text-decoration: none;
+
+
+}
+#p8{
+    background-color: black;
+  
+}
 </style>
-
 <body>
-    <div id="wrapper">
-        <div class="headline">
-            <h3>San pham ban chay</h3>
-        </div>
-        <ul class="product">
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p1-1.jpeg" alt="">
+    <div id="p1">
+		<div class="menu">
+			<ul class="root">
+				<li><a href=""><span>Home</span> </a></li>
+				<li><a href=""> <span>Menu</span> </a>
+					<ul class="submenu">
+						<li><a href="">Fruit juices</a></li>
+						<li><a href=""> Vegetable Juices</a></li>
+						<li><a href="">Smoothies</a></li>
+						<li><a href=""> Protein Shakes</a></li>
+						<li><a href="">Winter Menu</a></li>
+						<li><a href="">Chocolate Juices</a></li>
+						<li><a href="">Mock Tails</a></li>
+					</ul>
 
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
+				</li>
+				<li><a href=""> <span>Guide</span> </a></li>
+				<li><a href=""> <span>Catering</span> </a></li>
+				<li><a href=""> <span>Franchising</span></a></li>
+				<li><a href="Contractus.html"> <span>Contract us</span></a></li>
+				<li> <a href=""><span> About us</span></a></li>
 
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p1-2.jpeg" alt="">
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
+			</ul>
+		</div>
+	</div>
+    <div id="p8">
 
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p2-2.jpeg" alt="">
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p3-2.jpeg" alt="">
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p7-1.jpeg" alt="">
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p6-1.jpeg" alt="">
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p3-1.jpeg" alt="">
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="p3-2.jpeg" alt="">
-                        </a>
-                        <a href="" class="buy">Mua ngay</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">
-                            Bags
-                        </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">99999</a>
-
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-    </div>
+		<input class="input2" type="text" id="text" name="" placeholder="Search....">
+	</div>
 </body>
-
 </html>

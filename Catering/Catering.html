@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/csscatering.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <title>Catering</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+          
+        }
+.headline{
+    
+margin-bottom: 0.2rem;
+   margin-left: 1rem;
+}
+ 
+
+        
+        .headline h2{
+padding: 90px;
+margin: 97px 100px;
+color: azure;
+border-bottom: whitesmoke solid thick;
+        }
+        .headline2{
+
+            background-image: url("beefsteak.png") ;
+   background-repeat: no-repeat;
+        }
+        .headline1{
+            background-image: url("shop.png") ;
+   background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body ng-app="myApp" ng-cotroller="Mycontroller">
+   
+    <div id="p1">
+		<div class="menu">
+			<ul class="root">
+				<li><a href="../Home/Home.html"><span>Home</span> </a></li>
+				<li><a href=""> <span>Menu</span> </a>
+					<ul class="submenu" style="text-align: center;">
+						<li><a href="">Fruit juices</a></li>
+						<li><a href=""> Vegetable Juices</a></li>
+						<li><a href="">Smoothies</a></li>
+						<li><a href=""> Protein Shakes</a></li>
+						<li><a href="">Winter Menu</a></li>
+						<li><a href="">Chocolate Juices</a></li>
+						<li><a href="">Mock Tails</a></li>
+					</ul>
+
+				</li>
+				<li><a href=""> <span>Guide</span> </a></li>
+				<li><a href="Catering.html"> <span>Catering</span> </a></li>
+				<li><a href=""> <span>Franchising</span></a></li>
+				<li><a href="../Contactus/Contactus.html"> <span>Contact us</span></a></li>
+				<li> <a href=""><span> About us</span></a></li>
+
+			</ul>
+		</div>
+	</div>
+    <div id="img">
+        <img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
+    </div>
+    <div id="p8">
+        
+		<input class="input2" type="text" id="text" name="" placeholder="Search....">
+    </div>
+    <div id="mainimg">
+        <img src="main1.png" alt="">
+    </div>
+    <div class="headlinemain">
+        <h1 style="color: brown;font-size: 60px;">Catering </h1>
+    </div>
+   
+    <div class="tmain">
+        <p>As you know beside the juice provide service we do serve catering for various event like wedding, show or party...
+           We will give you an advise about the menu, decorate the wedding, show, party...
+         This is your chance to leave a lasting impression on your guests.
+         You're probably thinking.
+         Okay, okay I'm interested. But how does it all work?
+         Let's get into the specifics… 
+         Here were the image that we take from the customer that believe in us to take care of they wedding, show, party...</p>
+    </div>
+    <div id="wrapper">
+
+        <ul class="catering">
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice0.jpg" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice1.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice2.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice3.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice4.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice5.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="catering">
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice6.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice7.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="image-top">
+                    <img src="cateringservice8.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+<div>
+    <div class="headline" >
+        <table>
+            <tr>
+                <td class="headline1"><a href="#!catering"><h2>The Problem of a party</h2></a></td>
+                <td class="headline2"> <a   href="#!bookatable"><h2>Book a table</h2></a></td>
+            </tr>
+        </table>
+    </div>
+    <div ng-view></div>
+</div>
+    <div id="p7">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3><img src="Red Grey Automotive Car Silhouette Logo (5) (1).png"></h3>
+					<p class="word">Shrek-Juice.com is a website of the Shrek Juice Centre which is big Juice
+						Centre famous for variety
+						of juices it provides. They also provide catering service for various events like Wedding, Shows
+						and
+						so
+						on.</p>
+	
+				</div>
+				<div class="col-sm-4">
+					<h3>Thông tin liên hệ</h3>
+					<p>Địa chỉ</p>
+					<p>Điên thoại</p>
+					<p>Email</p>
+					<p>Icon</p>
+				</div>
+				<div class="col-sm-2">
+					<h3>Bản đồ</h3>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+    var app = angular.module("myApp", ["ngRoute"]);
+            app.config(function ($routeProvider) {
+                $routeProvider
+                   
+                    .when("/catering", {
+                        templateUrl: "catering1.html"
+                    })
+                    .when("/bookatable", {
+                        templateUrl: "bookatable.html"
+                    })
+
+            });
+            app.controller('bookatable', function ($scope) {
+                $scope.book = function () {
+                    alert("Thank you for using our service");
+                }
+                    
+
+            });
+
+</script>
+</html>
+
+
+
+
+
+       

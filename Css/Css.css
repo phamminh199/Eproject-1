@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#p1 {
+
+  background: sandybrown;
+    height: 60px;
+    padding: 15px;
+text-decoration: none;
+    font-size: 1.3rem;
+  
+}
+
+  span {
+    color: black;
+  
+}
+
+.root {
+    float:right;
+    text-decoration: none;
+}
+
+ul.root>li {
+    list-style: none;
+    float:left;
+}
+
+ul.root>li>a {
+    padding: 35px;
+    position: relative;
+    width: max-content;
+}
+
+ul.submenu {
+    width: 250px;
+    min-height: 89px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+
+}
+
+ul.submenu li {
+    list-style: none;
+    position: relative;
+}
+
+
+ul.submenu li a {
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    text-indent: 10px;
+
+
+
+
+}
+
+ul.root>li:hover ul.submenu {
+    display: block;
+    background-color: sandybrown;
+    color: cornsilk;
+    transform: ease-in 0.35s;
+
+}
+
+ul.submenu li a:hover {
+    background-color: yellow;
+    color: darkblue;
+    transform: ease-in 0.35s;
+
+}
+.root>li>a:hover{
+    text-decoration: none;
+}
+.root>li>a::after {
+    content: "";
+    height: 2.7px;
+    width: 0;
+    background:rgb(185, 76, 33);
+    position: absolute;
+    bottom: 20px;
+    left: 1.9rem;
+    transition: all 0.5s ease-in-out;
+  
+
+}
+
+.root>li>a:hover::after {
+    width: 50%;
+    
+   
+
+}
+
+#p2 {
+    width: 100%;
+    height: 600px;
+}
+
+#p3 {
+    height: 600px;
+
+}
+
+#p4 img {
+    padding-top: 3rem;
+    
+}
+
+div#p4 {
+    margin: 100px;
+    margin-top: 200px;
+    
+
+}
+
+#p5 {
+   
+    padding: 2rem;
+
+
+
+}
+
+#p7 {
+    border: tomato solid thick;
+    padding: 1rem;
+    background-color: #ff914d;
+
+}
+
+#p8 {
+
+    background-color: black;
+    height: 90px;
+    padding: 1rem;
+text-align: center;
+
+}
+
+
+.input2 {
+ height: 90%;
+    width: 30%;
+    border: tomato double thin;
+    border-radius: 0.2rem;
+}
+
+div.gallery {
+    border: 2px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+div.gallery img {
+  
+    max-width: 100%;
+    height: auto;
+    
+}
+
+div.desc {
+    padding: 30px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.responsive {
+    padding: 18px;
+   float: right;
+    width: 24.99999%;
+
+}
+
+
+
+
+
+.word {
+    font-size: 1.3rem;
+}
+
+#img {
+
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+#wrapper{
+margin: 0 auto;
+max-width: 1270px;
+border:rgb(223, 182, 199) solid 1px;
+box-shadow: 10px 10px 10px rgb(219, 173, 133);
+margin-bottom: 7rem;
+}
+.headline {
+text-align: center;
+margin: 40px 0px;
+}
+
+.headline h3 {
+font-size: 80px;
+color: red;
+padding: 10px 20px;
+text-transform: uppercase;
+border: solid black 4px;
+display: inline-block;
+}
+.headline h4 {
+padding: 10px 20px;
+border: 1px black solid;
+display: inline-block;
+color: #ff914d;
+}
+ul.product {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+list-style: none;
+}
+
+ul.product li {
+flex-basis: 25%;
+padding-left: 15px;
+padding-right: 15px;
+box-sizing: border-box;
+margin-bottom: 30px;
+
+}
+
+ul.product li img {
+max-width: 100%;
+height: auto;
+border:tomato solid 2px;
+}
+
+ul.product li  .product-top {
+overflow: hidden;
+position: relative;
+
+}
+
+ul.product li:hover  .product-top .product-thumb img {
+filter: opacity(80%);
+}
+
+ul.product li  .product-top .product-thumb {
+display: block;
+
+}
+
+ul.product li  .product-top .product-thumb img {
+display: block;
+
+}
+
+ul.product li:hover a.buy {
+bottom: 0px;
+transition: 1s ease-in-out;
+}
+
+ul.product li  .product-top a.buy {
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+display: block;
+background-color:#446084;
+color:#fff;
+padding: 10px 0px;
+position: absolute;
+width: 100%;
+transition: 0.8s ease-in-out;
+opacity: 0.85;
+}
+
+ul.product li .product.info {
+padding: 20px 0px;
+
+}
+
+ul.product li .product-info a {
+display: block;
+text-decoration: none;
+
+}
+
+ul.product li .product.info a.product-cat {
+font-size: 11px;
+text-transform: uppercase;
+padding: 3px 0px;
+
+}
+
+ul.product li .product.info a.product-name {
+padding: 3px 0px;
+
+}
+
+ul.product li .product.info .product-price {
+padding: 2px 0px;
+font-weight: 600px;
+
+}
