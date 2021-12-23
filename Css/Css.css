@@ -20,7 +20,7 @@ text-decoration: none;
 
   span {
     color: black;
-  
+    background: sandybrown;
 }
 
 .root {
@@ -198,8 +198,16 @@ div.desc {
 
 .word {
     font-size: 1.3rem;
+    
 }
-
+.word1 a{
+    color: black;
+    font-size: 1.2rem;
+}
+.word1 {
+    color: black;
+    font-size: 1.2rem;
+}
 #img {
 
     position: absolute;
@@ -242,6 +250,18 @@ padding: 10px 20px;
 border: 1px black solid;
 display: inline-block;
 color: #ff914d;
+background-color: brown;
+letter-spacing: 1px;
+
+}
+.headline h4:hover{
+    color: black;
+background-color:sandybrown;
+transition: 0.25s ease-in-out;
+
+
+
+
 }
 ul.product {
 display: flex;
