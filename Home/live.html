@@ -1,146 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    *{
-        margin:  0px auto;
-        padding: 0px 0px ;
-    }
-    #p1 {
-
-background-color: sandybrown;
-height: 60px;
-padding: 15px;
-text-decoration: none;
-font-size: 1.3rem;
-
-
-}
-
-span {
-color: black;
-}
-
-.root {
-float:right;
-background-color: sandybrown;
-text-align:right
-}
-
-ul.root>li {
-list-style: none;
-float:left
-
-
-}
-
-ul.root>li>a {
-padding: 35px;
-position: relative;
-
-}
-
-ul.submenu {
-width: 250px;
-min-height: 89px;
-display: none;
-position: absolute;
-
-}
-
-ul.submenu li {
-list-style: none;
-position: relative;
-}
-
-
-ul.submenu li a {
-text-transform: none;
-text-decoration: none;
-color: #fff;
-display: block;
-border: 1px solid #ccc;
-line-height: 40px;
-text-indent: 10px;
-
-
-
-
-}
-
-ul.root>li:hover ul.submenu {
-display: block;
-background-color: sandybrown;
-color: cornsilk;
-transform: ease-in 0.35s;
-
-
-}
-
-ul.submenu li a:hover {
-background-color: yellow;
-color: darkblue;
-transform: ease-in 0.35s;
-
-}
-
-.root>li>a::after {
-content: "";
-height: 2.7px;
-width: 0;
-background: red;
-position: absolute;
-bottom: 20px;
-left: 1.9rem;
-transition: all 0.5s ease-in-out;
-
-}
-
-.root>li>a:hover::after {
-width: 50%;
-text-decoration: none;
-
-
-}
-#p8{
-    background-color: black;
-  
-}
-</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <body>
-    <div id="p1">
-		<div class="menu">
-			<ul class="root">
-				<li><a href=""><span>Home</span> </a></li>
-				<li><a href=""> <span>Menu</span> </a>
-					<ul class="submenu">
-						<li><a href="">Fruit juices</a></li>
-						<li><a href=""> Vegetable Juices</a></li>
-						<li><a href="">Smoothies</a></li>
-						<li><a href=""> Protein Shakes</a></li>
-						<li><a href="">Winter Menu</a></li>
-						<li><a href="">Chocolate Juices</a></li>
-						<li><a href="">Mock Tails</a></li>
-					</ul>
 
-				</li>
-				<li><a href=""> <span>Guide</span> </a></li>
-				<li><a href=""> <span>Catering</span> </a></li>
-				<li><a href=""> <span>Franchising</span></a></li>
-				<li><a href="Contractus.html"> <span>Contract us</span></a></li>
-				<li> <a href=""><span> About us</span></a></li>
+<div class="container">  
+  <h1>My Icons <i class="fas fa-heart"></i></h1>
+  <p>An icon along with some text: <i class="fas fa-thumbs-up"></i></p> 
+</div>
+  
+<div class="container">
+  <p>Others:</p>
+  <i class="fas fa-cloud"></i>
+  <i class="fas fa-coffee"></i>
+  <i class="fas fa-car"></i>
+  <i class="fas fa-file"></i>
+  <i class="fas fa-bars"></i>
+</div>
 
-			</ul>
-		</div>
-	</div>
-    <div id="p8">
-
-		<input class="input2" type="text" id="text" name="" placeholder="Search....">
-	</div>
 </body>
+
 </html>

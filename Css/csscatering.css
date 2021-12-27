@@ -16,10 +16,16 @@ body {
 }
 .word {
     font-size: 1.3rem;
+    
 }
 .word1 a{
     color: black;
     font-size: 1.2rem;
+}
+
+.word1 a:hover{
+    text-decoration: none;
+    color: black;
 }
 .word1 {
     color: black;

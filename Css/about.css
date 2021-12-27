@@ -1,19 +1,4 @@
-.headline {
-    text-align: center;
-    margin: 40px 0px;
-}
-h2 {
-    font-size: 20px;
-    color: black;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    border: 1px solid #bebebe;
-    display: inline-block;
-    color: black;
-    font-weight: 600;
-}
-
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -21,22 +6,6 @@ h2 {
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-.word {
-    font-size: 1.3rem;
-    
-}
-.word1 a{
-    color: black;
-    font-size: 1.2rem;
-}
-.word1 a:hover{
-    text-decoration: none;
-    color: black;
-}
-.word1 {
-    color: black;
-    font-size: 1.2rem;
 }
 
 #p1 {
@@ -135,6 +104,14 @@ ul.submenu li a:hover {
    
 
 }
+
+#p7 {
+    border: tomato solid thick;
+    padding: 1rem;
+    background-color: #ff914d;
+
+}
+
 #p8 {
 
     background-color: black;
@@ -142,6 +119,29 @@ ul.submenu li a:hover {
     padding: 1rem;
 text-align: center;
 
+}
+
+
+.input2 {
+ height: 90%;
+    width: 30%;
+    border: tomato double thin;
+    border-radius: 0.2rem;
+}
+.word {
+    font-size: 1.3rem;
+    
+}
+.word1 a{
+    color: black;
+    font-size: 1.2rem;
+}
+.word1 a{
+    text-decoration: none;
+}
+.word1 {
+    color: black;
+    font-size: 1.2rem;
 }
 #img {
 
@@ -151,41 +151,32 @@ text-align: center;
     font-size: 10px;
     font-weight: bold;
 }
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+h2{
+    font-size: 30px;
+    color: black;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+}
 
-.input2 {
- height: 90%;
-    width: 30%;
-    border: tomato double thin;
-    border-radius: 0.2rem;
+
+
+
+.form-design {
+    margin-top: 4rem;
+    color: brown;
+
 }
-#p7 {
-    border: tomato solid thick;
-    padding: 1rem;
-    background-color: #ff914d;
-text-align: center;}
-.word {
-    font-size: 1.3rem;
+.form-design1{
+    margin-bottom: 2rem;
 }
-.word1{
-    font-size: 1.2rem;
+.social-connect img{
+margin-left: 1rem;        
 }
-.G1{
-    float: right;
-    padding-right: 70px;
-    padding-top: 60px;
-  }
-  .G2{
-      float: right;
-      padding-right: 70px;
-      padding-top: 120px;  
-  }
-  .G3{
-      float: right;
-      padding-right: 70px;
-      padding-top: 55px;
-  }
-  .G4{
-      float: right;
-      padding-right: 70px;
-      padding-top: 45px;
-  }

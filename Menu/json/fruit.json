@@ -1,0 +1,15 @@
+[
+    {"Img":"Fruit juices/chanh.jpg","Name": "Lemon juice", "Avalable": "Always", "Price": 20000},
+    {"Img":"Fruit juices/luu.jpg" ,"Name": "Luu", "Avalable": "Seasonal", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Gravefruit", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Aloe vera juice", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Tomatoes juice", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Orange juice", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Stawberry juice", "Avalable": "Seasonal", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Watermelon juice", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Pineapple juice", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Grave juice", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Guava juice", "Avalable": "Always", "Price": 20000},
+    {"Img": "Fruit juices/chanh.jpg","Name": "Sori juice", "Avalable": "Seasonal", "Price": 20000}
+   
+]
