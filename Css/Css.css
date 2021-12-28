@@ -306,6 +306,7 @@ font-weight: 600px;
 }
 @media screen and (max-width:1148px){
     #p1 li {
+
           display: none;
         
       }
