@@ -189,3 +189,11 @@ text-align: center;}
       padding-right: 70px;
       padding-top: 45px;
   }
+  @media screen and (max-width:1148px){
+    #p1 li {
+          display: none;
+        
+      }
+      
+        
+}

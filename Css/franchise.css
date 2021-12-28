@@ -197,3 +197,11 @@ text-align: center;
     border: tomato double thin;
     border-radius: 0.2rem;
 }
+@media screen and (max-width:1148px){
+    #p1 li {
+          display: none;
+        
+      }
+      
+        
+}

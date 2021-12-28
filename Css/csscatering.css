@@ -162,19 +162,6 @@ text-align: center;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 h1 {
     font-size: 29px;
     color: black;
@@ -227,4 +214,12 @@ ul.catering li img {
 ul.catering li .image-top {
     text-transform: uppercase;
     text-decoration: none;
+}
+@media screen and (max-width:1148px){
+    #p1 li {
+          display: none;
+        
+      }
+      
+        
 }

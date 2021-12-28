@@ -196,5 +196,12 @@ text-align: center;
     font-weight: bold;
 }
 
-
+@media screen and (max-width:1148px){
+    #p1 li {
+          display: none;
+        
+      }
+      
+        
+}
 

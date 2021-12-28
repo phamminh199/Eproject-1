@@ -304,3 +304,11 @@ padding: 2px 0px;
 font-weight: 600px;
 
 }
+@media screen and (max-width:1148px){
+    #p1 li {
+          display: none;
+        
+      }
+      
+        
+}
