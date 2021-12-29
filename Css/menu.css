@@ -152,7 +152,8 @@ div.product.p{
     border: tomato solid thick;
     padding: 1rem;
     background-color: #ff914d;
-
+    position: relative;
+    margin-top: 400px;
 }
 
 #p8 {
