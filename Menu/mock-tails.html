@@ -1,0 +1,32 @@
+<div>
+    <div id="p8"> 
+        <input class="input2" type="text" ng-model="info" placeholder="Search....">
+    </div>
+    <div class="headline">
+        <h3>Mock Tail Menu</h3><br>    
+    </div>    
+<div id="wrapper">
+    <div class="product" ng-repeat="m in mocktail|filter:info">
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="{{m.Img}}" > 
+                    </a>
+                    <a href="" class="buy">Add to cart</a>
+                </div>
+                <div class="product-info">
+                    <a  class="product-cat">
+                        {{m.Name}}
+                    </a>
+                    <a href="" class="product-name"> {{m.Avalable}}</a>
+                    <a href="" class="product-price"> {{m.Price}}</a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+</div>
+
+

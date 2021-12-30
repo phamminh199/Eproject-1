@@ -1,0 +1,32 @@
+<div>
+    <div id="p8"> 
+        <input class="input2" type="text" ng-model="info" placeholder="Search....">
+    </div>
+    <div class="headline">
+        <h3>Chocolate Menu</h3><br>
+    </div>
+    
+    <div id="wrapper">
+        <div class="product"  ng-repeat="choco in chocolate|filter:info">
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="{{choco.Img}}" alt="">
+                        </a>
+                        <a href="" class="buy">Add to cart</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            {{choco.Name}}
+                        </a>
+                        <a href="" class="product-name">  {{choco.Avalable}}</a>
+                        <a href="" class="product-price">   {{choco.Price}}</a>
+
+                    </div>
+                </div>
+
+   
+            </div>
+	
+    </div>
+</div>    

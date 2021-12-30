@@ -1,19 +1,34 @@
 <div>
+    <div id="p8"> 
+        <input class="input2" type="text" ng-model="info" placeholder="Search....">
+    </div>
     <div class="headline">
         <h3>Fruit Juice Menu</h3><br>
-        <input type="text" ng-model="info" placeholder="Search....">
-    </div>
-    <div class="product" ng-repeat="a in fruit|filter:info">
-            
-               <img src="{{a.Img}}" class="product-thumb"> 
-               <a href="" class="buy">Add to cart</a><br>                
-        
-            {{a.Name}}<br>
-            {{a.Avalable}}<br>
-            {{a.Price}}<br>
-            
+      
     </div>
     
-    
+    <div id="wrapper">
+        <div class="product" ng-repeat="a in fruit|filter:info">
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="{{a.Img}}" alt="">
+                        </a>
+                        <a href="" class="buy">Add to cart</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            {{a.Name}}
+                        </a>
+                        <a href="" class="product-name"> {{a.Avalable}}</a>
+                        <a href="" class="product-price"> {{a.Price}}</a>
+
+                    </div>
+                </div>
+
+   
+            </div>
+	
+    </div>
 </div>    
 

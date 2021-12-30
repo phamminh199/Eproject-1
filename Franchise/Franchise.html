@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
+    <title>Franchising</title>
     <link rel="stylesheet" href="../Css/franchise.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -60,10 +60,9 @@
     <div id="img">
 			<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png" >
     </div>
-    <div id="p8">
-        
-		<input class="input2" type="text" id="text" name="" placeholder="Search....">
-    </div>
+    <form action="" id="p8">
+		<input class="input2" type="search" id="btnSearch"  placeholder="Search....">
+	</form>
     <div class="headline">
         <h1 style="margin-top: 2rem;"><strong>Welcome to Shrek Juice Franchising</strong></h1>
         <hr>
@@ -242,5 +241,13 @@
 
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+        $(document).ready(function(){
+            $("#p8").submit(function(){
+                $("#btnSearch").click(alert("Go to the menu to make the feature"))
+            });
+            $()
+        });
+    </script>
 </html>

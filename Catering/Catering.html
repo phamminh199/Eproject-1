@@ -13,6 +13,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <title>Catering</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+        $(document).ready(function(){
+            $("#p8").submit(function(){
+                $("#btnSearch").click(alert("Go to the menu to make the feature"))
+            });
+            $()
+        });
+    </script>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -73,10 +82,9 @@ border-bottom: whitesmoke solid thick;
     <div id="img">
 			<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png" >
     </div>
-    <div id="p8">
-        
-		<input class="input2" type="text" id="text" name="" placeholder="Search....">
-    </div>
+    <form action="" id="p8">
+		<input class="input2" type="search" id="btnSearch"  placeholder="Search....">
+	</form>
     <div id="mainimg">
         <img src="main1.png" alt=""  width="100%">
     </div>

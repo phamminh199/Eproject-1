@@ -61,7 +61,7 @@ transition: 0.25s ease-in-out;
 				<li><a href="Home.html"><span>Home</span> </a></li>
 				<li><a href="../Menu/Menu.html"> <span>Menu</span> </a>
 					<ul class="submenu">
-						<li><a href="">Fruit juices</a></li>
+						<li><a href="../Menu/Menu.html">Fruit juices</a></li>
 						<li><a href=""> Vegetable Juices</a></li>
 						<li><a href="">Smoothies</a></li>
 						<li><a href=""> Protein Shakes</a></li>
@@ -88,10 +88,9 @@ transition: 0.25s ease-in-out;
 		</a>  
 	
 	</div>
-	<div id="p8">
-
-		<input class="input2" type="text" id="text" name="" placeholder="Search....">
-	</div>
+	<form action="" id="p8">
+		<input class="input2" type="search" id="btnSearch"  placeholder="Search....">
+	</form>
 
 
 	<div id="demo" class="carousel slide" data-ride="carousel">
@@ -368,7 +367,16 @@ transition: 0.25s ease-in-out;
 			</div>
 		</div>
 	</div>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+        $(document).ready(function(){
+            $("#p8").submit(function(){
+                $("#btnSearch").click(alert("Go to the menu to make the feature"))
+            });
+            $()
+        });
+    </script>
+	
 </body>
 
 </html>
