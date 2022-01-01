@@ -2,18 +2,22 @@
 <html>
 
 <head>
-    
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-<link rel="stylesheet" href="../Css/menu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<link rel="stylesheet" href="../Css/menu.css">
+
 	<title>Menu</title>
 </head>
 
-<body ng-app="myApp">
-<div  ng-controller="mainCTR">
-	<div id="p1" >
+<body ng-app="myApp"  ng-controller='productcontroll' ng-init="menu"  >
+	<div>
+		<div id="p1">
 			<ul class="root">
 				<li><a href="../Home/Home.html"><span>Home</span> </a></li>
 				<li><a href="#!main"> <span>Menu</span> </a>
@@ -33,124 +37,341 @@
 				<li><a href="../Franchise/Franchise.html"> <span>Franchising</span></a></li>
 				<li><a href="../Contactus/Contactus.html"> <span>Contact us</span></a></li>
 				<li> <a href="../About us/About.html"><span> About us</span></a></li>
-
+				<li class="cart"> <a href="#!cart"><span> Cart</span></a></li>
 			</ul>
-		
-        <div id="img">
-            <img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
-        </div>
+
+			<div id="img">
+				<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
+			</div>
 
 		</div>
-		<div ng-view></div>
-	</div>
-    <div id="p7">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8">
-					<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
-					<p class="word">Shrek-Juice.com is a website of the Shrek Juice Centre which is big Juice
-						Centre famous for variety
-						of juices it provides. They also provide catering service for various events like Wedding, Shows
-						and
-						so
-						on.</p>
-	
-				</div>
-				<div class="col-sm-2">
-				<div style="text-align: left;">
-					<h3>Category</h3>
-					<br>
-					<p class="word1"><a href="../Home/Home.html">Home </a></p>
-					<p class="word1"><a href="">Menu</a></p>
-					<p class="word1"><a href="../Guide/guide.html">Guide </a></p>
-					<p class="word1"><a href="../Catering/Catering.html">Catering</a></p>
-					<p class="word1"><a href="../Franchise/Franchise.html">Franchising</a></p>
-					<p class="word1"><a href="../Contactus/Contactus.html">Contact us</a></p>
-					<p class="word1"><a href="../About us/About.html">About us</a></p>
-				</div>
-				  
-				</div>
-				<div class="col-sm-2" >
-					<h3>Contact us</h3>
-					<br>
-					<div style="text-align: left;">
-						<p class="word1">Address :Cach mang thang tam Distric 3 HCM</p>
-						<p class="word1">Phone:123456789</p>
-					    <p class="word1">Email:<a href="ShrekJuice@gmail.com">ShrekJuice@gmail.com</a></p>
+		<div>
+
+
+			<div ng-view></div>
+
+		</div>
+		<div id="p7">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
+						<p class="word">Shrek-Juice.com is a website of the Shrek Juice Centre which is big Juice
+							Centre famous for variety
+							of juices it provides. They also provide catering service for various events like Wedding,
+							Shows
+							and
+							so
+							on.</p>
+
 					</div>
-			   
+					<div class="col-sm-2">
+						<div style="text-align: left;">
+							<h3>Category</h3>
+							<br>
+							<p class="word1"><a href="../Home/Home.html">Home </a></p>
+							<p class="word1"><a href="../Menu/Menu.html">Menu</a></p>
+							<p class="word1"><a href="../Guide/guide.html">Guide </a></p>
+							<p class="word1"><a href="../Catering/Catering.html">Catering</a></p>
+							<p class="word1"><a href="../Franchise/Franchise.html">Franchising</a></p>
+							<p class="word1"><a href="../Contactus/Contactus.html">Contact us</a></p>
+							<p class="word1"><a href="../About us/About.html">About us</a></p>
+						</div>
+
+					</div>
+					<div class="col-sm-2">
+						<h3>Contact us</h3>
+						<br>
+						<div style="text-align: left;">
+							<p class="word1">Address :Cach mang thang tam Distric 3 HCM</p>
+							<p class="word1">Phone:123456789</p>
+							<p class="word1">Email:<a href="ShrekJuice@gmail.com">ShrekJuice@gmail.com</a></p>
+						</div>
+
+					</div>
+
 				</div>
-		   
 			</div>
 		</div>
-	</div>
 </body>
-	
+
 <script>
 	var app = angular.module("myApp", ["ngRoute"]);
 	app.config(function ($routeProvider) {
 		$routeProvider
-		//.when("/main", {
-		//		templateUrl:" Menumain.html"
-		//	})
+			.when("/main", {
+				templateUrl: " Menumain.html"
+			})
 			.when("/fruit", {
 				templateUrl: "fruit.html"
 			})
 			.when("/vegetable", {
 				templateUrl: "vegetable.html",
-				
+
 			})
 			.when("/smoothies", {
 				templateUrl: "smoothies.html",
-				
+
 			})
 			.when("/chocolate", {
 				templateUrl: "chocolate.html",
-				
+
 			})
 			.when("/protein-shakes", {
 				templateUrl: "protein-shakes.html",
-				
+
 			})
 			.when("/mock-tails", {
 				templateUrl: "mock-tails.html",
-				
+
 			})
 			.when("/winter-menu", {
 				templateUrl: "winter-menu.html",
-				
+
+			})
+			.when("/cart", {
+				templateUrl: "cart.html",
+
 			})
 	});
-	app.controller('mainCTR', function ($scope, $http) {
+	app.controller("productcontroll", function ($scope, $http) {
 		$http.get("json/fruit.json").then(function (response) {
 			$scope.fruit = response.data;
 			console.log($scope.fruit)
 		});
-	
+
 		$http.get("json/vegetable.json").then(function (response) {
-			$scope.vegetable = response.data;					
+			$scope.vegetable = response.data;
 			console.log($scope.vegetable)
 		});
 		$http.get("json/chocolate.json").then(function (response) {
-			$scope.chocolate = response.data;					
+			$scope.chocolate = response.data;
 			console.log($scope.chocolate)
 		});
 		$http.get("json/smoothies.json").then(function (response) {
-			$scope.smoothies = response.data;					
+			$scope.smoothies = response.data;
 			console.log($scope.smoothies)
 		});
 		$http.get("json/protein-shakes.json").then(function (response) {
-			$scope.protein = response.data;					
+			$scope.protein = response.data;
 			console.log($scope.protein)
 		});
 		$http.get("json/winter-menu.json").then(function (response) {
-			$scope.winter = response.data;					
+			$scope.winter = response.data;
 			console.log($scope.winter)
 		});
 		$http.get("json/mock-tails.json").then(function (response) {
-			$scope.mocktail = response.data;					
+			$scope.mocktail = response.data;
 			console.log($scope.mocktail)
 		});
-});
+
+	});
+
+	app.run(function ($rootScope, $http) {
+		$http.get("json/shrek.json").then(function (response) {
+			$rootScope.menu = response.data;
+			console.log($rootScope.menu);
+
+		});
+		$rootScope.cart = [];
+		$rootScope.total = 0;
+
+	});
+
+
+	app.controller("productcontroll", function ($scope, $rootScope) {
+
+		$scope.addCart = function (id) {
+			var item = $rootScope.menu.fruit[id];
+
+
+			for (var i = 15; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.price
+			$rootScope.cart.push(newEle);
+			console.log($rootScope.cart)
+
+
+		}
+
+		$scope.addCart1 = function (id) {
+			var item = $rootScope.menu.chocolate[id];
+
+
+			for (var i = 30; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.price
+			$rootScope.cart.push(newEle);
+			console.log($rootScope.cart)
+
+
+		}
+
+		$scope.addCart2 = function (id) {
+			var item = $rootScope.menu.mocktail[id];
+
+
+			for (var i = 45; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.price
+			$rootScope.cart.push(newEle);
+			console.log($rootScope.cart)
+
+
+		}
+		$scope.addCart3 = function (id) {
+			var item = $rootScope.menu.protein[id];
+
+
+			for (var i = 60; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.price
+			$rootScope.cart.push(newEle);
+			console.log($rootScope.cart)
+
+
+		}
+		$scope.addCart4 = function (id) {
+			var item = $rootScope.menu.smoothies[id];
+
+
+			for (var i = 75; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.price
+			$rootScope.cart.push(newEle);
+			console.log($rootScope.cart)
+
+
+		}
+		$scope.addCart5 = function (id) {
+			var item = $rootScope.menu.vegetable[id];
+
+
+			for (var i = 90; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.price
+			$rootScope.cart.push(newEle);
+			console.log($rootScope.cart)
+
+
+		}
+		$scope.addCart6 = function (id) {
+			var item = $rootScope.menu.winter[id];
+
+
+			for (var i = 105; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.price
+			$rootScope.cart.push(newEle);
+			console.log($rootScope.cart)
+
+
+		}
+	});
+	app.controller("cartControl", function ($scope, $rootScope) {
+
+		$scope.isShow = false;
+		$scope.removeAll = function () {
+			$rootScope.total = 0
+			$rootScope.cart = [];
+		}
+
+		$scope.checkout = function () {
+			if ($rootScope.cart.length > 0) {
+				$scope.isShow = true;
+			}
+			else {
+				$scope.isShow = false;
+			}
+		}
+
+		$scope.thank = function () {
+			alert("Thanks for your order !");
+			$scope.isShow = false;
+			$rootScope.total = 0
+			$rootScope.cart = [];
+		}
+
+
+		
+	});
 </script>
+
 </html>

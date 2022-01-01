@@ -100,9 +100,6 @@ ul.submenu li a:hover {
 
 .root>li>a:hover::after {
     width: 50%;
-    
-   
-
 }
 
 #p2 {
@@ -312,4 +309,43 @@ font-weight: 600px;
       }
       
         
+}
+.fb{
+    background-color: peru;
+}
+.fb:hover{
+    background-color: red;
+}
+#p5 img{
+    padding: 0.7rem;
+    margin-left: 0.7rem;
+}
+#p5{
+margin-top: 50px;
+}
+.sendfeedback{
+    padding: 2rem;
+    font-size: 20px;
+}
+.sendfeedback a{
+    color: #ff914d;
+background-color: brown;
+border:  black solid thin;
+display: inline-block;
+padding: 1rem;
+}
+.sendfeedback a:hover{
+    text-decoration: none;
+    color: black;
+background-color:sandybrown;
+transition: 0.25s ease-in-out;
+}
+.G0{
+
+margin-bottom: 5rem;
+
+}
+.F1 {
+background-color: bisque;
+padding: 2rem;
 }

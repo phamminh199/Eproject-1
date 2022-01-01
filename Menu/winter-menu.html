@@ -7,20 +7,20 @@
         <h3>Winter Menu</h3><br>
     </div>    
 <div id="wrapper">
-    <div class="product" ng-repeat="w in winter|filter:info">
+    <div class="product" ng-repeat="a in menu.winter|filter:info">
             <div class="product-item">
                 <div class="product-top">
-                    <a href="" class="product-thumb">
-                        <img src="{{w.Img}}" > 
+                    <a href="" ng-click="addCart6($index)" class="product-thumb">
+                        <img src="{{a.Img}}" > 
                     </a>
-                    <a href="" class="buy">Add to cart</a>
+                    <a href="" ng-click="addCart6($index)"  class="buy">Add to cart</a>
                 </div>
-                <div class="product-info">
+                <div  class="product-info">
                     <a  class="product-cat">
-                        {{w.Name}}
+                        {{a.Name}}
                     </a>
-                    <a href="" class="product-name">{{w.Avalable}}</a>
-                    <a href="" class="product-price">{{w.Price}}</a>
+                    <a  class="product-name">{{a.Avalable}}</a>
+                    <a  class="product-price"> ${{a.Price}}</a>
 
                 </div>
             </div>

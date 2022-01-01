@@ -1,8 +1,8 @@
 [
-    {"Img": "Vegetable Juices/v1.jpg","Name": "Can Tay", "Avalable": "Always", "Price": 20000},
-    {"Img": "Vegetable Juices/v2.png","Name": "Dua Chuot", "Avalable": "Always", "Price": 20000},
-    {"Img": "Vegetable Juices/v3.jpg","Name": "Ca Rot", "Avalable": "Always", "Price": 20000},
-    {"Img": "Vegetable Juices/v4.jpg","Name": "Beet", "Avalable": "Always", "Price": 20000},
-    {"Img": "Vegetable Juices/v5.jpg","Name": "Spinach", "Avalable": "Always", "Price": 20000},
-    {"Img": "Vegetable Juices/v6.jpg","Name": "Rau ma", "Avalable": "Always", "Price": 20000}
+    {"Img": "Vegetable Juices/v1.jpg","Name": "Carrot", "Avalable": "Always", "Price": 7},
+    {"Img": "Vegetable Juices/v2.png","Name": "Celery", "Avalable": "Always", "Price": 7},
+    {"Img": "Vegetable Juices/v3.jpg","Name": "Beet ", "Avalable": "Always", "Price": 7},
+    {"Img": "Vegetable Juices/v4.jpg","Name": "Cucumber", "Avalable": "Always", "Price": 7},
+    {"Img": "Vegetable Juices/v5.jpg","Name": "Spinach", "Avalable": "Always", "Price": 7},
+    {"Img": "Vegetable Juices/v6.jpg","Name": "Rau-ma", "Avalable": "Always", "Price": 7}
 ]

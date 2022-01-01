@@ -1,18 +1,18 @@
 [
-    {"Img": "Chocolate Juices/c1.jpg","Name": "Cinnamon-Mocha-Coffee", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c2.jpg","Name": "Cozy-Hot-Chocolate", "Avalable": "Seasonal", "Price": 20000},
-    {"Img": "Chocolate Juices/c3.jpg","Name": "creamy-caramel-mocha", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c4.jpg","Name": "Chocolate-Caramel-Rum-Coffee", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c5.jpg","Name": "Fluffy-Hot-Chocolate", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c6.jpg","Name": "Hazelnut-Hot-Chocolate", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c7.jpg","Name": "irish-cream", "Avalable": "Seasonal", "Price": 20000},
-    {"Img":"Chocolate Juices/c8.jpg","Name": "Landmark-Hot-Chocolate", "Avalable": "Always", "Price": 20000},
-    {"Img":"Chocolate Juices/c9.jpg" ,"Name": "Mexican-Hot-Chocolate", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c10.jpg","Name": "peppermint-white-hot-chocolate", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c11.jpg","Name": "pumpkin-spice-hot-chocolate", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c12.jpg","Name": "Raspberry-Truffle", "Avalable": "Seasonal", "Price": 20000},
-    {"Img": "Chocolate Juices/c13.jpg","Name":  "Sweet-Kahlua-Coffee", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c14.jpg","Name": "Honey-Bourbon-Hot-Chocolate", "Avalable": "Always", "Price": 20000},
-    {"Img": "Chocolate Juices/c15.jpg","Name": "White-Chocolate-Brandy-Alexander", "Avalable": "Always", "Price": 20000}
+    {"Img": "Chocolate Juices/c1.jpg","Name": "Cinnamon-Mocha-Coffee", "Avalable": "Always", "Price":15},
+    {"Img": "Chocolate Juices/c2.jpg","Name": "Cozy-Hot-Chocolate", "Avalable": "Seasonal", "Price": 15},
+    {"Img": "Chocolate Juices/c3.jpg","Name": "creamy-caramel-mocha", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c4.jpg","Name": "Chocolate-Caramel-Rum-Coffee", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c5.jpg","Name": "Fluffy-Hot-Chocolate", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c6.jpg","Name": "Hazelnut-Hot-Chocolate", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c7.jpg","Name": "irish-cream", "Avalable": "Seasonal", "Price": 15},
+    {"Img":"Chocolate Juices/c8.jpg","Name": "Landmark-Hot-Chocolate", "Avalable": "Always", "Price": 15},
+    {"Img":"Chocolate Juices/c9.jpg" ,"Name": "Mexican-Hot-Chocolate", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c10.jpg","Name": "peppermint-white-hot-chocolate", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c11.jpg","Name": "pumpkin-spice-hot-chocolate", "Avalable": "Always", "Price":15},
+    {"Img": "Chocolate Juices/c12.jpg","Name": "Raspberry-Truffle", "Avalable": "Seasonal", "Price": 15},
+    {"Img": "Chocolate Juices/c13.jpg","Name":  "Sweet-Kahlua-Coffee", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c14.jpg","Name": "Honey-Bourbon-Hot-Chocolate", "Avalable": "Always", "Price": 15},
+    {"Img": "Chocolate Juices/c15.jpg","Name": "White-Chocolate-Brandy-Alexander", "Avalable": "Always", "Price": 15}
   
 ]

@@ -20,7 +20,6 @@ body {
   
     span {
       color: black;
-      background: sandybrown;
   }
   
   .root {
@@ -167,6 +166,7 @@ text-align: center;
     left: 60px;
     font-size: 10px;
     font-weight: bold;
+    z-index: 100;
 }
 
 @media screen and (max-width:1148px){
@@ -184,7 +184,7 @@ text-align: center;
     padding: 1rem;
     background-color: #ff914d;
     position: relative;
-    margin-top: 400px;
+    margin-top: 10px;
     clear:left;
 }
 
@@ -195,8 +195,8 @@ text-align: center;
     }
     
     .product {
-    width: 360Px;
-    padding: 8px;
+    width: 400px;
+    padding: 10px;
     float: left;
     }
     
@@ -285,5 +285,19 @@ text-align: center;
      .product-price {
     padding: 2px 0px;
     font-weight: 600px;
+    
+    }
+
+    .cart{
+        border: 1px red solid;
+        box-shadow: 0 4px 8px 0 rgba(196, 18, 18, 0.2), 0 6px 20px 0 rgba(224, 136, 191, 0.19);
+        background-color:rgb(255, 36, 36);
+        border-radius: 0.8rem;
+        font-weight: 500;
+        
+    }
+    
+    .cart:hover{
+        filter: opacity(80%);
     
     }

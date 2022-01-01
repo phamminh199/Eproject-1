@@ -1,15 +1,12 @@
 [
-    {"Img": "Smoothies/st1.jpg","Name": "Avocado Smoothies ", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st2.jpg","Name": "Carrot Smoothies ", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st5.jpg","Name": " Banana Smoothies", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st6.jpg","Name": "Strawberry Smoothies", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st8.jpg","Name": "Coconut Smoothies", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st10.jpg","Name": "Grape Smoothies", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st12.jpg","Name": "Smoothies sinh-to-sapoche", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st9.jpg","Name": "Smoothies sinh-to-mang-cau", "Avalable": "Always", "Price": 20000},
-    {"Img": "Smoothies/st3.png","Name": "Smoothies kiwi", "Avalable": "Always", "Price": 20000}
-
-
-  
+    {"Img": "Smoothies/st1.jpg","Name": "Avocado Smoothies ", "Avalable": "Always", "Price": 12},
+    {"Img": "Smoothies/st2.jpg","Name": "Carrot Smoothies ", "Avalable": "Always", "Price":  12},
+    {"Img": "Smoothies/st5.jpg","Name": " Banana Smoothies", "Avalable": "Always", "Price":  12},
+    {"Img": "Smoothies/st6.jpg","Name": "Strawberry Smoothies", "Avalable": "Always", "Price":  12},
+    {"Img": "Smoothies/st8.jpg","Name": "Coconut Smoothies", "Avalable": "Always", "Price":  12},
+    {"Img": "Smoothies/st10.jpg","Name": "Grape Smoothies", "Avalable": "Always", "Price":  12},
+    {"Img": "Smoothies/st12.jpg","Name": "Smoothies sinh-to-sapoche", "Avalable": "Always", "Price":  12},
+    {"Img": "Smoothies/st9.jpg","Name": "Smoothies sinh-to-mang-cau", "Avalable": "Always", "Price":  12},
+    {"Img": "Smoothies/st3.png","Name": "Smoothies kiwi", "Avalable": "Always", "Price":  12}
     
 ]
