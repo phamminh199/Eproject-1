@@ -191,12 +191,6 @@ text-align: center;
     font-weight: bold;
 }
 
-.input2 {
- height: 90%;
-    width: 30%;
-    border: tomato double thin;
-    border-radius: 0.2rem;
-}
 @media screen and (max-width:1148px){
     #p1 li {
           display: none;

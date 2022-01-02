@@ -149,12 +149,6 @@ font-size: 16px;
     font-weight: bold;
 }
 
-.input2 {
- height: 90%;
-    width: 30%;
-    border: tomato double thin;
-    border-radius: 0.2rem;
-}
 #p7 {
     border: tomato solid thick;
     padding: 1rem;

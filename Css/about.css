@@ -122,12 +122,7 @@ text-align: center;
 }
 
 
-.input2 {
- height: 90%;
-    width: 30%;
-    border: tomato double thin;
-    border-radius: 0.2rem;
-}
+
 .word {
     font-size: 1.3rem;
     
