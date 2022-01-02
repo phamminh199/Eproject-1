@@ -2,97 +2,100 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="../Css/Css.css">
-	<title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="../Css/Css.css">
+    <title>Home</title>
 </head>
-<body>
 
-	<div id="p1">
-		<div class="menu">
-			<ul class="root">
-				<li><a href="Home.html"><span>Home</span> </a></li>
-				<li><a href="../Menu/Menu.html"> <span>Menu</span> </a>
-					<ul class="submenu">
-						<li><a href="">Fruit juices</a></li>
-						<li><a href=""> Vegetable Juices</a></li>
-						<li><a href="">Smoothies</a></li>
-						<li><a href=""> Protein Shakes</a></li>
-						<li><a href="">Winter Menu</a></li>
-						<li><a href="">Chocolate Juices</a></li>
-						<li><a href="">Mock Tails</a></li>
-					</ul>
+<body ng-app="myApp" ng-controller='productcontroll' ng-init="menu">
 
-				</li>
-				<li><a href="../Guide/guide.html"> <span>Guide</span> </a></li>
-				<li><a href="../Catering/Catering.html"> <span>Catering</span> </a></li>
-				<li><a href="../Franchise/Franchise.html"> <span>Franchising</span></a></li>
-				<li><a href="../Contactus/Contactus.html"> <span>Contact us</span></a></li>
-				<li> <a href="../About us/About.html"><span> About us</span></a></li>
-			
+    <div id="p1">
+        <div class="menu">
+            <ul class="root">
+                <li><a href="Home.html"><span>Home</span> </a></li>
+                <li><a href="../Menu/Menu.html"> <span>Menu</span> </a>
+                    <ul class="submenu">
+                        <li><a href="../Menu/Menu.html">Fruit juices</a></li>
+                        <li><a href="../Menu/Menu.html"> Vegetable Juices</a></li>
+                        <li><a href="../Menu/Menu.html">Smoothies</a></li>
+                        <li><a href="../Menu/Menu.html"> Protein Shakes</a></li>
+                        <li><a href="../Menu/Menu.html">Winter Menu</a></li>
+                        <li><a href="../Menu/Menu.html">Chocolate Juices</a></li>
+                        <li><a href="../Menu/Menu.html">Mock Tails</a></li>
+                    </ul>
 
-
-			</ul>
-		</div>
-	</div>
-
-	<div id="img">
-		<a href="../Home/Home.html">
-			<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png" >
-			
-		</a>  
-	
-	</div>
-	<form action="" id="p8">
-		<input class="input2" type="search" id="btnSearch"  placeholder="Search....">
-	</form>
+                </li>
+                <li><a href="../Guide/guide.html"> <span>Guide</span> </a></li>
+                <li><a href="../Catering/Catering.html"> <span>Catering</span> </a></li>
+                <li><a href="../Franchise/Franchise.html"> <span>Franchising</span></a></li>
+                <li><a href="../Contactus/Contactus.html"> <span>Contact us</span></a></li>
+                <li> <a href="../About us/About.html"><span> About us</span></a></li>
 
 
-	<div id="demo" class="carousel slide" data-ride="carousel">
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="img">
+        <a href="../Home/Home.html">
+            <img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
+
+        </a>
+
+    </div>
+    <form action="" id="p8">
+        <input class="input2" type="search" id="btnSearch" placeholder="Search....">
+    </form>
 
 
-		<ul class="carousel-indicators">
-			<li data-target="#demo" data-slide-to="0" class="active"></li>
-			<li data-target="#demo" data-slide-to="1"></li>
-			<li data-target="#demo" data-slide-to="2"></li>
-			<li data-target="#demo" data-slide-to="3"></li>
-			<li data-target="#demo" data-slide-to="4"></li>
-		</ul>
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="slide-1.png" width="1100" height="100">
-			</div>
-			<div class="carousel-item">
-				<img src="slide-2.png" width="1100" height="500">
-			</div>
-			<div class="carousel-item">
-				<img src="slide-1 (2).png" width="1100" height="500">
-			</div>
-			<div class="carousel-item">
-				<img src="sile-1 (5).png">
-			</div>
-			<div class="carousel-item">
-				<img src="slide-1 (8).png">
-			</div>
-		</div>
 
-		<a class="carousel-control-prev" href="#demo" data-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</a>
-		<a class="carousel-control-next" href="#demo" data-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</a>
-	</div>
-	</div>
-	<br><br>
-	<div id="wrapper">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slide-1.png" width="1100" height="100">
+            </div>
+            <div class="carousel-item">
+                <img src="slide-2.png" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="slide-1 (2).png" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="sile-1 (5).png">
+            </div>
+            <div class="carousel-item">
+                <img src="slide-1 (8).png">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    </div>
+    <br><br>
+    <div id="wrapper">
         <div class="headline">
             <h3>Best Seller</h3>
         </div>
@@ -104,7 +107,7 @@
                             <img src="luu.png" alt="">
 
                         </a>
-                        <a href="../Menu/Menu.html" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
                     <div class="product-info">
                         <a href="" class="product-cat">
@@ -122,9 +125,9 @@
                         <a href="" class="product-thumb">
                             <img src="c3.png" alt="">
                         </a>
-                        <a href="" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
-                    <div class="product-info" >
+                    <div class="product-info">
                         <a href="" class="product-cat">
                             Chocolate-Caramel-Rum
                         </a>
@@ -140,11 +143,11 @@
                         <a href="" class="product-thumb">
                             <img src="chuoi.png" alt="">
                         </a>
-                        <a href="" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
                     <div class="product-info">
                         <a href="" class="product-cat">
-							Banana Smoothies
+                            Banana Smoothies
                         </a>
                         <a href="" class="product-name">Always</a>
                         <a href="" class="product-price">$12</a>
@@ -158,14 +161,14 @@
                         <a href="" class="product-thumb">
                             <img src="protein.png" alt="">
                         </a>
-                        <a href="" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
                     <div class="product-info">
                         <a href="" class="product-cat">
-                            Bags
+                            Banana Almond Butter
                         </a>
-                        <a href="" class="product-name">Daily</a>
-                        <a href="" class="product-price">$15</a>
+                        <a href="" class="product-name">Always</a>
+                        <a href="" class="product-price">$25</a>
 
                     </div>
                 </div>
@@ -176,7 +179,7 @@
                         <a href="" class="product-thumb">
                             <img src="winter.png" alt="">
                         </a>
-                        <a href="" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
                     <div class="product-info">
                         <a href="" class="product-cat">
@@ -194,11 +197,11 @@
                         <a href="" class="product-thumb">
                             <img src="vegetable.png" alt="">
                         </a>
-                        <a href="" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
                     <div class="product-info">
                         <a href="" class="product-cat">
-							Beet
+                            Beet
                         </a>
                         <a href="" class="product-name">Always</a>
                         <a href="" class="product-price">$7</a>
@@ -212,7 +215,7 @@
                         <a href="" class="product-thumb">
                             <img src="Mt1.png" alt="">
                         </a>
-                        <a href="" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
                     <div class="product-info">
                         <a href="" class="product-cat">
@@ -230,7 +233,7 @@
                         <a href="" class="product-thumb">
                             <img src="Mt2.png" alt="">
                         </a>
-                        <a href="" class="buy">Add to Cart</a>
+                        <a href="../Menu/Menu.html" class="buy">Go to Menu</a>
                     </div>
                     <div class="product-info">
                         <a href="" class="product-cat">
@@ -243,101 +246,107 @@
                 </div>
             </li>
         </ul>
-		<div class="headline">
-			<a href="../Menu/Menu.html">
-            <h4 style="font-size: 2.4rem;">Full Menu</h4></a>
+        <div class="headline">
+            <a href="../Menu/Menu.html">
+                <h4 style="font-size: 2.4rem;">Full Menu</h4>
+            </a>
         </div>
     </div>
 
-	
-	<div class="F1" style="font-size: 25px;">
-		<strong><h1>Benefit of Juice</h1> </strong><br>
-        <div class="G0"><img src="live.png" alt="" ></div>
-	
-	   Fruit juices vary in nutritional value, but most have a variety of health benefits. 
-	   They contain various antioxidants that help reduce the risk of certain health issues and vitamins that help the body function well.
-	   Some fruit juices also help combat problems, such as constipation, while cranberry juice can help prevent UTIs.
-	   Some fruit juices are also high in sugar and calories, meaning people should avoid consuming too much juice.
-	   Too much sugar and calories can lead to weight gain,type 2 diabetes, and heart disease.
-	   <div class="sendfeedback" >
-		<a href="../Guide/guide.html">  Looking for more information</a>
-	</div>
-	</div>
 
-	
+    <div class="F1" style="font-size: 25px;">
+        <strong>
+            <h1>Benefit of Juice</h1>
+        </strong><br>
+        <div class="G0"><img src="live.png" alt=""></div>
+
+        Fruit juices vary in nutritional value, but most have a variety of health benefits.
+        They contain various antioxidants that help reduce the risk of certain health issues and vitamins that help the
+        body function well.
+        Some fruit juices also help combat problems, such as constipation, while cranberry juice can help prevent UTIs.
+        Some fruit juices are also high in sugar and calories, meaning people should avoid consuming too much juice.
+        Too much sugar and calories can lead to weight gain,type 2 diabetes, and heart disease.
+        <div class="sendfeedback">
+            <a href="../Guide/guide.html"> Looking for more information</a>
+        </div>
+    </div>
 
 
-	<div id="p5">
-		<fieldset>
-			<legend style="font-size: 40px; border-bottom: tomato solid thick;">Feedback</legend>
-			<table >
-				<td ><img src="fb1.png"> 
-					<img src="fb2.png">
-					<img src="fb3.png">
-					<img src="fb4.png">
-					<img src="fb5.png">
-					<img src="fb6.png">
-					</td>
-			</table>
-			<div class="sendfeedback" style="border-top: tomato solid thick;">
-				<a href="../Contactus/Contactus.html">  SEND FEEDBACK</a>
-			</div>
-		</fieldset>
-	</div>
 
-	
-	
-	<div id="p7">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8">
-					<img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
-					<p class="word">Shrek-Juice.com is a website of the Shrek Juice Centre which is big Juice
-						Centre famous for variety
-						of juices it provides. They also provide catering service for various events like Wedding, Shows
-						and
-						so
-						on.</p>
-	
-				</div>
-				<div class="col-sm-2">
-				<div style="text-align: left;">
-					<h3>Category</h3>
-					<br>
-					<p class="word1"><a href="../Home/Home.html">Home </a></p>
-					<p class="word1"><a href="../Menu/Menu.html">Menu</a></p>
-					<p class="word1"><a href="../Guide/guide.html">Guide </a></p>
-					<p class="word1"><a href="../Catering/Catering.html">Catering</a></p>
-					<p class="word1"><a href="../Franchise/Franchise.html">Franchising</a></p>
-					<p class="word1"><a href="../Contactus/Contactus.html">Contact us</a></p>
-					<p class="word1"><a href="../About us/About.html">About us</a></p>
-				</div>
-				  
-				</div>
-				<div class="col-sm-2" >
-					<h3>Contact us</h3>
-					<br>
-					<div style="text-align: left;">
-						<p class="word1">Address :Cach mang thang tam Distric 3 HCM</p>
-						<p class="word1">Phone:123456789</p>
-					    <p class="word1">Email:<a href="ShrekJuice@gmail.com">ShrekJuice@gmail.com</a></p>
-					</div>
-			   
-				</div>
-		   
-			</div>
-		</div>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-        $(document).ready(function(){
-            $("#p8").submit(function(){
+
+    <div id="p5">
+        <fieldset>
+            <legend style="font-size: 40px; border-bottom: tomato solid thick;">Feedback</legend>
+            <table>
+                <td><img src="fb1.png">
+                    <img src="fb2.png">
+                    <img src="fb3.png">
+                    <img src="fb4.png">
+                    <img src="fb5.png">
+                    <img src="fb6.png">
+                </td>
+            </table>
+            <div class="sendfeedback" style="border-top: tomato solid thick;">
+                <a href="../Contactus/Contactus.html"> SEND FEEDBACK</a>
+            </div>
+        </fieldset>
+    </div>
+
+
+
+    <div id="p7">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <img src="Red Grey Automotive Car Silhouette Logo (5) (1).png">
+                    <p class="word">Shrek-Juice.com is a website of the Shrek Juice Centre which is big Juice
+                        Centre famous for variety
+                        of juices it provides. They also provide catering service for various events like Wedding, Shows
+                        and
+                        so
+                        on.</p>
+
+                </div>
+                <div class="col-sm-2">
+                    <div style="text-align: left;">
+                        <h3>Category</h3>
+                        <br>
+                        <p class="word1"><a href="../Home/Home.html">Home </a></p>
+                        <p class="word1"><a href="../Menu/Menu.html">Menu</a></p>
+                        <p class="word1"><a href="../Guide/guide.html">Guide </a></p>
+                        <p class="word1"><a href="../Catering/Catering.html">Catering</a></p>
+                        <p class="word1"><a href="../Franchise/Franchise.html">Franchising</a></p>
+                        <p class="word1"><a href="../Contactus/Contactus.html">Contact us</a></p>
+                        <p class="word1"><a href="../About us/About.html">About us</a></p>
+                    </div>
+
+                </div>
+                <div class="col-sm-2">
+                    <h3>Contact us</h3>
+                    <br>
+                    <div style="text-align: left;">
+                        <p class="word1">Address :Cach mang thang tam Distric 3 HCM</p>
+                        <p class="word1">Phone:123456789</p>
+                        <p class="word1">Email:<a href="ShrekJuice@gmail.com">ShrekJuice@gmail.com</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#p8").submit(function () {
                 $("#btnSearch").click(alert("Go to the menu to make the feature"))
             });
             $()
         });
     </script>
-	
+
+
+
 </body>
 
 </html>

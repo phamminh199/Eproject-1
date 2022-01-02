@@ -9,10 +9,10 @@ h1 {
     color: black;
     padding: 5px 10px;
     text-transform: uppercase;
-    border: 1px solid #999393;
     display: inline-block;
     color: black;
     font-weight: 600;
+    text-align: center;
 }
 .info1{
 

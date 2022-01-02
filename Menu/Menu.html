@@ -20,7 +20,7 @@
 		<div id="p1">
 			<ul class="root">
 				<li><a href="../Home/Home.html"><span>Home</span> </a></li>
-				<li><a href="#!main"> <span>Menu</span> </a>
+				<li><a href="../Home/Home.html"> <span>Menu</span> </a>
 					<ul class="submenu">
 						<li><a href="#!fruit">Fruit juices</a></li>
 						<li><a href="#!vegetable"> Vegetable Juices</a></li>
@@ -36,8 +36,9 @@
 				<li><a href="../Catering/Catering.html"> <span>Catering</span> </a></li>
 				<li><a href="../Franchise/Franchise.html"> <span>Franchising</span></a></li>
 				<li><a href="../Contactus/Contactus.html"> <span>Contact us</span></a></li>
-				<li> <a href="../About us/About.html"><span> About us</span></a></li>
-				<li class="cart"> <a href="#!cart"><span> Cart</span></a></li>
+				<li> <a href="../About us/About.html"  ><span>  About us</span></a></li>
+				<li class="cart"><a href="#!cart"> <span>Cart</span></a></li>
+					 
 			</ul>
 
 			<div id="img">
@@ -99,9 +100,6 @@
 	var app = angular.module("myApp", ["ngRoute"]);
 	app.config(function ($routeProvider) {
 		$routeProvider
-			.when("/main", {
-				templateUrl: " Menumain.html"
-			})
 			.when("/fruit", {
 				templateUrl: "fruit.html"
 			})
@@ -185,7 +183,7 @@
 			var item = $rootScope.menu.fruit[id];
 
 
-			for (var i = 15; i < $rootScope.cart.length; ++i) {
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price
@@ -209,7 +207,7 @@
 			var item = $rootScope.menu.chocolate[id];
 
 
-			for (var i = 30; i < $rootScope.cart.length; ++i) {
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price
@@ -233,7 +231,7 @@
 			var item = $rootScope.menu.mocktail[id];
 
 
-			for (var i = 45; i < $rootScope.cart.length; ++i) {
+			for (var i =1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price
@@ -256,7 +254,7 @@
 			var item = $rootScope.menu.protein[id];
 
 
-			for (var i = 60; i < $rootScope.cart.length; ++i) {
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price
@@ -279,7 +277,7 @@
 			var item = $rootScope.menu.smoothies[id];
 
 
-			for (var i = 75; i < $rootScope.cart.length; ++i) {
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price
@@ -302,7 +300,7 @@
 			var item = $rootScope.menu.vegetable[id];
 
 
-			for (var i = 90; i < $rootScope.cart.length; ++i) {
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price
@@ -325,7 +323,7 @@
 			var item = $rootScope.menu.winter[id];
 
 
-			for (var i = 105; i < $rootScope.cart.length; ++i) {
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price

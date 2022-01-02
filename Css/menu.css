@@ -295,6 +295,10 @@ text-align: center;
         border-radius: 0.8rem;
         font-weight: 500;
         
+        
+    }
+    .cart span{
+        color: black;
     }
     
     .cart:hover{
