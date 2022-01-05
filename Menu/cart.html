@@ -1,16 +1,8 @@
 
 <style>
-    .number {
-
-        text-align: right;
-        padding-right: 20px;
-    }
-
-    #confirm {
-        width: 50%;
-        margin: auto;
-        padding: 5px;
-    }
+   .form-group input{
+       font-size: 150%;
+   }
 </style>
 <div id="p8"> 
     <h1 style="margin-top: 0.5rem; color: coral;">Your Detailed Orders</h1>
@@ -20,7 +12,7 @@
 
 <div class="container" ng-controller="cartControl" >
     <hr>
-    <table class="table table-hover">
+    <table class="table table-hover" style="font-size: 150%;">
         <thead>
             <tr>
                 <th>No.</th>
@@ -44,10 +36,10 @@
             </tr>
             <tr>
                 <th colspan="5" style="text-align: right">
-                    <input type="button" class="btn btn-danger" style="width: 100px;" value="Remove all"
+                    <input type="button" class="btn btn-danger" style="width: 100px;font-size: 100%;" value="Remove all"
                         ng-click="removeAll()">
                     <br>
-                    <input type="button" class="btn btn-info" style="width: 100px;" value="Checkout"
+                    <input type="button" class="btn btn-info" style="width: 100px;font-size: 100%" value="Checkout"
                         ng-click="checkout()">
                 </th>
             </tr>
@@ -55,8 +47,8 @@
     </table>
     
     <div id="confirm" ng-show="isShow">
-        <h3>We are here for you !</h3>
-        <p>Please complete and submit the following form.</p>
+        <h3 style="font-size: 400%;">We are here for you !</h3>
+        <p style="font-size: 200%;">Please complete and submit the following form.</p>
         <form action="" ng-submit="thank()">
             <div class="form-group">
                 <input type="text" name="txtName" required placeholder="Name" class="form-control">
@@ -68,7 +60,7 @@
                 <input type="text" name="txtPhone" required placeholder="Phone" class="form-control">
             </div>
             <div class="form-group">
-                <textarea name="txtNote" class="form-control" rows="5" placeholder="Comment">
+                <textarea style="font-size: 200%;" name="txtNote" class="form-control" rows="5" placeholder="Comment">
                         </textarea>
             </div>
             <div class="form-group">

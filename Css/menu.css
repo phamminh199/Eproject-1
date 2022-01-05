@@ -305,3 +305,36 @@ text-align: center;
         filter: opacity(80%);
     
     }
+
+    html span{
+        font-size:141%;
+      }
+      html .submenu{
+        font-size:145%;
+      }
+      html .word1{
+        font-size:180%;
+      }
+      html .word1 a{
+        font-size:90%;
+      }
+      html .word{
+        font-size:170%;
+      }
+      html #p7 h3{
+        font-size:250%;
+      }
+     html  {
+    overflow-x: hidden;
+    font-size: 70%;
+  } 
+  html h1{
+    font-size: 400%;
+  }
+  html .buy{
+    font-size: 195%;
+
+  }
+  html .input2{
+    font-size: 150%;
+  }

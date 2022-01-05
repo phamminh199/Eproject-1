@@ -14,13 +14,35 @@
 
 	<title>Menu</title>
 </head>
-
-<body ng-app="myApp"  ng-controller='productcontroll' ng-init="menu"  >
+<style>
+	 body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  html span{
+    font-size:141%;
+  }
+  html .submenu{
+    font-size:150%;
+  }
+  html .word1{
+    font-size:180%;
+  }
+  html .word1 a{
+    font-size:90%;
+  }
+  html .word{
+    font-size:170%;
+  }
+  html #p7 h3{
+    font-size:250%;
+  }
+</style>
+<body ng-app="myApp" ng-controller='productcontroll' ng-init="menu">
 	<div>
 		<div id="p1">
 			<ul class="root">
 				<li><a href="../Home/Home.html"><span>Home</span> </a></li>
-				<li><a href="../Home/Home.html"> <span>Menu</span> </a>
+				<li><a href="#/!"> <span>Menu</span> </a>
 					<ul class="submenu">
 						<li><a href="#!fruit">Fruit juices</a></li>
 						<li><a href="#!vegetable"> Vegetable Juices</a></li>
@@ -36,9 +58,9 @@
 				<li><a href="../Catering/Catering.html"> <span>Catering</span> </a></li>
 				<li><a href="../Franchise/Franchise.html"> <span>Franchising</span></a></li>
 				<li><a href="../Contactus/Contactus.html"> <span>Contact us</span></a></li>
-				<li> <a href="../About us/About.html"  ><span>  About us</span></a></li>
+				<li> <a href="../About us/About.html"><span> About us</span></a></li>
 				<li class="cart"><a href="#!cart"> <span>Cart</span></a></li>
-					 
+
 			</ul>
 
 			<div id="img">
@@ -100,6 +122,9 @@
 	var app = angular.module("myApp", ["ngRoute"]);
 	app.config(function ($routeProvider) {
 		$routeProvider
+			.when("/", {
+				templateUrl: "main.html"
+			})
 			.when("/fruit", {
 				templateUrl: "fruit.html"
 			})
@@ -162,6 +187,10 @@
 			$scope.mocktail = response.data;
 			console.log($scope.mocktail)
 		});
+		$http.get("json/Bestseller.json").then(function (response) {
+			$scope.main = response.data;
+			console.log($scope.main)
+		});
 
 	});
 
@@ -180,9 +209,8 @@
 	app.controller("productcontroll", function ($scope, $rootScope) {
 
 		$scope.addCart = function (id) {
-			var item = $rootScope.menu.fruit[id];
-
-
+			var index = $rootScope.menu.fruit.findIndex((element) => element.id == id);
+			var item = $rootScope.menu.fruit[index];
 			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
@@ -196,7 +224,7 @@
 				"Price": item.Price,
 				"qty": 1
 			}
-			$rootScope.total += item.price
+			$rootScope.total += item.Price
 			$rootScope.cart.push(newEle);
 			console.log($rootScope.cart)
 
@@ -204,8 +232,8 @@
 		}
 
 		$scope.addCart1 = function (id) {
-			var item = $rootScope.menu.chocolate[id];
-
+			var index = $rootScope.menu.chocolate.findIndex((element) => element.id == id);
+			var item = $rootScope.menu.chocolate[index];
 
 			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
@@ -214,45 +242,44 @@
 					return;
 				}
 			}
-			var newEle = {
+			var newEle1 = {
 				"id": id,
 				"Name": item.Name,
 				"Price": item.Price,
 				"qty": 1
 			}
-			$rootScope.total += item.price
-			$rootScope.cart.push(newEle);
+			$rootScope.total += item.Price
+			$rootScope.cart.push(newEle1);
 			console.log($rootScope.cart)
 
 
 		}
 
 		$scope.addCart2 = function (id) {
-			var item = $rootScope.menu.mocktail[id];
-
-
-			for (var i =1000; i < $rootScope.cart.length; ++i) {
+			var index = $rootScope.menu.mocktail.findIndex((element) => element.id == id);
+			var item = $rootScope.menu.mocktail[index];
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
 					$rootScope.total += $rootScope.cart[i].Price
 					return;
 				}
 			}
-			var newEle = {
+			var newEle2 = {
 				"id": id,
 				"Name": item.Name,
 				"Price": item.Price,
 				"qty": 1
 			}
-			$rootScope.total += item.price
-			$rootScope.cart.push(newEle);
+			$rootScope.total += item.Price
+			$rootScope.cart.push(newEle2);
 			console.log($rootScope.cart)
 
 
 		}
 		$scope.addCart3 = function (id) {
-			var item = $rootScope.menu.protein[id];
-
+			var index = $rootScope.menu.protein.findIndex((element) => element.id == id);
+			var item = $rootScope.menu.protein[index];
 
 			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
@@ -261,22 +288,21 @@
 					return;
 				}
 			}
-			var newEle = {
+			var newEle3 = {
 				"id": id,
 				"Name": item.Name,
 				"Price": item.Price,
 				"qty": 1
 			}
-			$rootScope.total += item.price
-			$rootScope.cart.push(newEle);
+			$rootScope.total += item.Price
+			$rootScope.cart.push(newEle3);
 			console.log($rootScope.cart)
 
 
 		}
 		$scope.addCart4 = function (id) {
-			var item = $rootScope.menu.smoothies[id];
-
-
+			var index = $rootScope.menu.smoothies.findIndex((element) => element.id == id);
+			var item = $rootScope.menu.smoothies[index];
 			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
@@ -284,22 +310,21 @@
 					return;
 				}
 			}
-			var newEle = {
+			var newEle4 = {
 				"id": id,
 				"Name": item.Name,
 				"Price": item.Price,
 				"qty": 1
 			}
-			$rootScope.total += item.price
-			$rootScope.cart.push(newEle);
+			$rootScope.total += item.Price
+			$rootScope.cart.push(newEle4);
 			console.log($rootScope.cart)
 
 
 		}
 		$scope.addCart5 = function (id) {
-			var item = $rootScope.menu.vegetable[id];
-
-
+			var index = $rootScope.menu.vegetable.findIndex((element) => element.id == id);
+			var item = $rootScope.menu.vegetable[index];
 			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
@@ -307,22 +332,21 @@
 					return;
 				}
 			}
-			var newEle = {
+			var newEle5 = {
 				"id": id,
 				"Name": item.Name,
 				"Price": item.Price,
 				"qty": 1
 			}
-			$rootScope.total += item.price
-			$rootScope.cart.push(newEle);
+			$rootScope.total += item.Price
+			$rootScope.cart.push(newEle5);
 			console.log($rootScope.cart)
 
 
 		}
 		$scope.addCart6 = function (id) {
-			var item = $rootScope.menu.winter[id];
-
-
+			var index = $rootScope.menu.winter.findIndex((element) => element.id == id);
+			var item = $rootScope.menu.winter[index];
 			for (var i = 1000; i < $rootScope.cart.length; ++i) {
 				if ($rootScope.cart[i].id == id) {
 					$rootScope.cart[i].qty++;
@@ -330,18 +354,41 @@
 					return;
 				}
 			}
-			var newEle = {
+			var newEle6 = {
 				"id": id,
 				"Name": item.Name,
 				"Price": item.Price,
 				"qty": 1
 			}
-			$rootScope.total += item.price
-			$rootScope.cart.push(newEle);
+			$rootScope.total += item.Price
+			$rootScope.cart.push(newEle6);
 			console.log($rootScope.cart)
 
 
 		}
+
+		$scope.addCart7 = function (id) {
+			var item = $rootScope.menu.main[id];
+			for (var i = 1000; i < $rootScope.cart.length; ++i) {
+				if ($rootScope.cart[i].id == id) {
+					$rootScope.cart[i].qty++;
+					$rootScope.total += $rootScope.cart[i].Price
+					return;
+				}
+			}
+			var newEle7 = {
+				"id": id,
+				"Name": item.Name,
+				"Price": item.Price,
+				"qty": 1
+			}
+			$rootScope.total += item.Price
+			$rootScope.cart.push(newEle7);
+			console.log($rootScope.cart)
+
+
+		}
+		
 	});
 	app.controller("cartControl", function ($scope, $rootScope) {
 
@@ -368,7 +415,7 @@
 		}
 
 
-		
+
 	});
 </script>
 

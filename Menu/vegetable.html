@@ -10,10 +10,10 @@
         <div class="product" ng-repeat="a in menu.vegetable|filter:info">
                 <div class="product-item">
                     <div class="product-top">
-                        <a href="" ng-click="addCart5($index)" class="product-thumb">
+                        <a href="" ng-click="addCart5(a.id)" class="product-thumb">
                             <img src="{{a.Img}}" alt="">
                         </a>
-                        <a href="" ng-click="addCart5($index)"  class="buy">Add to cart</a>
+                        <a href="" ng-click="addCart5(a.id)"  class="buy">Add to cart</a>
                     </div>
                     <div class="product-info">
                         <a  class="product-cat">

@@ -1,0 +1,187 @@
+<style>
+  
+  .home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 2rem 10rem;
+  }
+
+  .home .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .home .content {
+    margin-top: 7rem;
+  }
+
+  .home .content h1 {
+    font-size: 6.1vw;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+  }
+
+  .home .content p {
+    font-size: 1.5vw;
+    color: #eee;
+    text-shadow: 0 .3rem .5rem #000;
+    padding-left: 2rem;
+    border-left: .3rem solid #ddd;
+  }
+
+  .home .form-container form {
+    margin-top: 8rem;
+    padding: 2rem;
+    width: 40rem;
+    background-color: #fff;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .9);
+    border-radius: .5rem;
+  }
+
+  .home .form-container form h3 {
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .home .form-container form span {
+    color: #0098a1;
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    display: block;
+    float: left;
+  }
+
+  .home .form-container form input {
+    width: 100%;
+    padding: 0 1rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background: #eee;
+    border: none;
+    outline: none;
+    color: #333;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    border-radius: .5rem;
+  }
+
+  .home .form-container form input[type="submit"] {
+    width: 10rem;
+    background: #0098a1;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: .2s linear;
+  }
+
+  .home .form-container form input[type="submit"]:hover {
+    border: .2rem solid #0098a1;
+    color: #0098a1;
+    background: none;
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+
+ 
+  
+</style>
+
+<body>
+  
+  <div>
+    <div id="p8">
+      <h1 style="margin-top: 0.2rem; color: coral;">Welcome to Menu</h1>
+    </div>
+    <div >
+      <section class="home" id="home">
+
+        <div class="video">
+          <video src="menu.mp4" loop muted autoplay></video>
+        </div>
+
+        <div class="content">
+          <h1> We are pleased<br> to serve you</h1>
+          <p>Shrek-Juice.com is a website of the Shrek Juice Centre which is Big <br>Juice
+            Centre famous for variety of juices it provides. They also provide catering 
+            service for various events like Wedding, Shows and so on.</p>
+        </div>
+
+        <div class="form-container" id="form">
+          <form action="">
+
+            <h3 >Customer information</h3>
+
+            <span>Name</span>
+            <input type="text" placeholder=" Enter Your Name" id="name" required>
+
+            <span>Country</span>
+            <input type="text" placeholder=" Enter Your Country" id="country" required>
+
+            <span>Email</span>
+            <input type="text" placeholder="Enter Your Email" id="email" required>
+
+            <span>favorite product</span>
+            <input type="text" id="product" required>
+ 
+            <input type="submit" value="Send">
+
+          </form>
+        </div>
+
+      </section>
+
+    </div>
+    <div class="headline">
+      <h3>BEST SELLER</h3><br>
+    </div>
+    <div id="wrapper">
+      <div class="product" ng-repeat="a in menu.main">
+        <div class="product-item">
+          <div class="product-top">
+            <a href="" ng-click="addCar7($index)" class="product-thumb">
+              <img src="{{a.Img}}" alt="">
+            </a>
+            <a href="" ng-click="addCart7($index)" class="buy">Add to cart</a>
+          </div>
+          <div class="product-info">
+            <a class="product-cat">
+              {{a.Name}}
+            </a>
+            <a class="product-name"> {{a.Avalable}}</a>
+            <a class="product-price"> ${{a.Price}}</a>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+<script>
+  	document.getElementById("form").onsubmit = function () {
+		var Name = document.getElementById("name").value;
+    var favoriteproduct = document.getElementById("product").value;
+		var Country = document.getElementById("country").value;
+		var email = document.getElementById("email").value;
+		alert(" Thank you for sending us information. Please check your email regularly to receive our offers!!!");
+
+	}
+</script>
+</body>
