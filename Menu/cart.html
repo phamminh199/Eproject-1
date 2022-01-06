@@ -29,6 +29,8 @@
                 <td class="number">{{item.Price}}</td>
                 <td class="number">{{item.qty}}</td>
                 <td class="number">{{item.Price * item.qty|currency}}</td>
+                <td><input type="button" style="width: 100px;font-size: 100%;" class="btn btn-outline-danger" value="Delete" 
+                    ng-click="remove($index)">
             </tr>
             <tr >
                 <th colspan="4" style="text-align: right">Total Amount: </td>

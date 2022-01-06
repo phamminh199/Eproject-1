@@ -157,55 +157,21 @@
 
 			})
 	});
-	app.controller("productcontroll", function ($scope, $http) {
-		$http.get("json/fruit.json").then(function (response) {
-			$scope.fruit = response.data;
-			console.log($scope.fruit)
-		});
-
-		$http.get("json/vegetable.json").then(function (response) {
-			$scope.vegetable = response.data;
-			console.log($scope.vegetable)
-		});
-		$http.get("json/chocolate.json").then(function (response) {
-			$scope.chocolate = response.data;
-			console.log($scope.chocolate)
-		});
-		$http.get("json/smoothies.json").then(function (response) {
-			$scope.smoothies = response.data;
-			console.log($scope.smoothies)
-		});
-		$http.get("json/protein-shakes.json").then(function (response) {
-			$scope.protein = response.data;
-			console.log($scope.protein)
-		});
-		$http.get("json/winter-menu.json").then(function (response) {
-			$scope.winter = response.data;
-			console.log($scope.winter)
-		});
-		$http.get("json/mock-tails.json").then(function (response) {
-			$scope.mocktail = response.data;
-			console.log($scope.mocktail)
-		});
-		$http.get("json/Bestseller.json").then(function (response) {
-			$scope.main = response.data;
-			console.log($scope.main)
-		});
-
-	});
+	
 
 	app.run(function ($rootScope, $http) {
 		$http.get("json/shrek.json").then(function (response) {
 			$rootScope.menu = response.data;
+
 			console.log($rootScope.menu);
 
+		
 		});
 		$rootScope.cart = [];
 		$rootScope.total = 0;
 
 	});
-
-
+	
 	app.controller("productcontroll", function ($scope, $rootScope) {
 
 		$scope.addCart = function (id) {
@@ -230,6 +196,7 @@
 
 
 		}
+		
 
 		$scope.addCart1 = function (id) {
 			var index = $rootScope.menu.chocolate.findIndex((element) => element.id == id);
@@ -388,11 +355,16 @@
 
 
 		}
-		
+
+	
 	});
 	app.controller("cartControl", function ($scope, $rootScope) {
-
-		$scope.isShow = false;
+		$scope.remove = function (index) {
+			$rootScope.total-=	$rootScope.cart[index].Price*$rootScope.cart[index].qty;
+			$rootScope.cart.splice(index, 1);
+               }
+		
+			   $scope.isShow = false;
 		$scope.removeAll = function () {
 			$rootScope.total = 0
 			$rootScope.cart = [];
